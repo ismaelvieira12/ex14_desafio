@@ -45,6 +45,7 @@ body{
     cursor: pointer;
     margin-top: 0.2rem;
     font-weight: lighter;
+    text-decoration: none;
 }
 
 .container-nav ul{
@@ -57,5 +58,25 @@ body{
     text-decoration: none;
     color: var(--branco);
     font-family: "Saira Semi Condensed", sans-serif;
+    padding: 10px;
+    position: relative;
+    transition: 0.3s linear;
+    &::after{
+        content: " ";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        border-radius: 20px;
+        bottom: 5px;
+        left: 10px;
+        background-color: var(--vermelho);
+        transition: 0.3s linear;
+    }
+
+    &:hover::after{
+        background-color: var(--vermelho);
+        width: 100%;
+    }
 }
+
 
