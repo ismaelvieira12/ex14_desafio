@@ -101,14 +101,46 @@ body{
     margin-top: 60px;
 }
 
-.conteudo h1{
-    font-size: 1.8rem;
+.infor-pessoal{
+    font-size: 1.4rem;
     padding: 15px;
     font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
+.infor-pessoal span{
+    position: relative;
+
+    /* Adicionando o cursor depois do span */
+    &::after{
+        position: absolute;
+        content: " ";
+        height: 100%;
+        border-left: 2px solid var(--vermelho);
+        right: -10px;
+        animation: cursor 0.7s infinite;
+        width: calc(100% + 13px);
+        opacity: 1;
+    }
+
+    /* Adicionando a frase antes do apan */
+    &::before{
+        content: " ";
+        color: var(--vermelho);
+        animation: frase 20s infinite;  
+    }
+}
+
+@keyframes frase{
+    0%, 100%{
+        content: "Ismael Nasicmento Vieira"
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-right: 2px solid var(--preto);
+    }
+}
 /* Estilizandoa a div que dará destaque a imagem */
 .box-img{
     position: absolute;
@@ -139,7 +171,7 @@ body{
         transform: rotate(-135deg);
     }
 }
-
+/* Centralizando a imagem */
 @keyframes img {
     0%{
         transform: rotate(-135deg);
