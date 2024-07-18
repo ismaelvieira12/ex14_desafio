@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
     font-family: Saira, sans-serif;
 }
 
@@ -18,6 +17,10 @@
 body{
     width: 100vw;
     height: 100vh;
+    background-color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Estilizando o header e o menu */
 .container-header{
@@ -37,7 +40,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
 }
 
 .logo{
@@ -80,4 +83,31 @@ body{
     }
 }
 
+/* Estilizando meu content */
+.container-main{
+    width: 70%;
+    height: 100%;
+}
+.first-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    color: var(--branco);
+    width: 100%;
+    height: 80%;
+    margin: 15px 0;
+}
+.box-img{
+    position: absolute;
+    right: 10px;
+}
+.first-container img{
+    border-radius: 50%;
+    width: 400px;
+}
 
+@keyframes content1 {
+     
+}
