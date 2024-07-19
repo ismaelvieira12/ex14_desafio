@@ -111,6 +111,14 @@ body{
 
 .infor-pessoal span{
     position: relative;
+    font-family: "Righteous", sans-serif;
+    font-weight: 100;
+    /* Adicionando a frase antes do apan */
+    &::before{
+        content: " ";
+        color: var(--vermelho);
+        animation: frase 20s infinite;  
+    }
 
     /* Adicionando o cursor depois do span */
     &::after{
@@ -121,15 +129,9 @@ body{
         right: -10px;
         width: calc(100% + 13px);
         background-color: var(--preto);
-        animation: cursor .6s infinite;
+        animation: cursor .8s infinite, revelarFrase 20s steps(15) infinite;
     }
 
-    /* Adicionando a frase antes do apan */
-    &::before{
-        content: " ";
-        color: var(--vermelho);
-        animation: frase 20s infinite;  
-    }
 }
 
 @keyframes frase{
@@ -142,6 +144,16 @@ body{
     0%{
         border-left: 2px solid var(--preto);
     }
+}
+
+@keyframes revelarFrase {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+
+    5%, 20%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 13px);
+    } 
 }
 /* Estilizandoa a div que dará destaque a imagem */
 .box-img{
@@ -156,6 +168,7 @@ body{
     border-radius: 15px;
     right: 50px;
     animation: box-img 2s linear infinite;
+    background-color: var(--);
 }
 .first-container img{
     border-radius: 50%;
