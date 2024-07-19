@@ -1,10 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
     font-family: Saira, sans-serif;
 }
 
@@ -13,18 +13,24 @@
     --preto: #000000;
     --vermelho: #e53939;
     --branco: #ffffff;
+
+    --first-contente: #262525;
 }
 
 body{
     width: 100vw;
     height: 100vh;
+    background-color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Estilizando o header e o menu */
 .container-header{
     position: fixed;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1500px;
     height: 60px;
     background-color: var(--preto);
     box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
@@ -37,7 +43,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
 }
 
 .logo{
@@ -80,4 +86,100 @@ body{
     }
 }
 
+/* Estilizando meu content */
+.container-main{
+    width: 1050px;
+    height: 100%;
+}
 
+.first-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--branco);
+    width: 100%;
+    height: 80%;
+    margin-top: 60px;
+}
+
+.infor-pessoal{
+    font-size: 1.4rem;
+    padding: 15px;
+    font-family: "Righteous", sans-serif;
+}
+
+.infor-pessoal span{
+    position: relative;
+
+    /* Adicionando o cursor depois do span */
+    &::after{
+        content: " ";
+        position: absolute;
+        height: 100%;
+        border-left: 2px solid var(--vermelho);
+        right: -10px;
+        width: calc(100% + 13px);
+        background-color: var(--preto);
+        animation: cursor .6s infinite;
+    }
+
+    /* Adicionando a frase antes do apan */
+    &::before{
+        content: " ";
+        color: var(--vermelho);
+        animation: frase 20s infinite;  
+    }
+}
+
+@keyframes frase{
+    0%, 100%{
+        content: "Ismael Nasicmento Vieira"
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid var(--preto);
+    }
+}
+/* Estilizandoa a div que dará destaque a imagem */
+.box-img{
+    position: absolute;
+    border: 2px solid var(--vermelho);
+    box-shadow: 2px 5px 50px rgba(252, 60, 60, 0.737);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    right: 50px;
+    animation: box-img 2s linear infinite;
+}
+.first-container img{
+    border-radius: 50%;
+    width: 200px;
+    animation: img 2s linear infinite;
+}
+
+/* Rotação da div destáque */
+@keyframes box-img {
+    0%{
+        transform: rotate(135deg);
+    }
+
+    100%{
+        transform: rotate(-135deg);
+    }
+}
+/* Centralizando a imagem */
+@keyframes img {
+    0%{
+        transform: rotate(-135deg);
+    }
+
+    100%{
+        transform: rotate(135deg);
+    }
+}
