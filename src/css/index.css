@@ -13,6 +13,8 @@
     --preto: #000000;
     --vermelho: #e53939;
     --branco: #ffffff;
+
+    --first-contente: #262525;
 }
 
 body{
@@ -112,14 +114,14 @@ body{
 
     /* Adicionando o cursor depois do span */
     &::after{
-        position: absolute;
         content: " ";
+        position: absolute;
         height: 100%;
         border-left: 2px solid var(--vermelho);
         right: -10px;
-        animation: cursor 0.7s infinite;
         width: calc(100% + 13px);
-        opacity: 1;
+        background-color: var(--preto);
+        animation: cursor .6s infinite;
     }
 
     /* Adicionando a frase antes do apan */
@@ -138,7 +140,7 @@ body{
 
 @keyframes cursor {
     0%{
-        border-right: 2px solid var(--preto);
+        border-left: 2px solid var(--preto);
     }
 }
 /* Estilizandoa a div que dará destaque a imagem */
