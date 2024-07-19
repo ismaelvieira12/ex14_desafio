@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin: 0;
@@ -14,7 +15,7 @@
     --vermelho: #e53939;
     --branco: #ffffff;
 
-    --first-contente: #262525;
+    --first-contente: #0f0f0f;
 }
 
 body{
@@ -54,6 +55,10 @@ body{
     font-weight: lighter;
     text-decoration: none;
 }
+.logo span{
+    color: var(--vermelho);
+    font-weight: bold;
+}
 
 .container-nav ul{
     display: flex;
@@ -88,29 +93,51 @@ body{
 
 /* Estilizando meu content */
 .container-main{
-    width: 1050px;
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
+.first-section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: var(--preto);
+}
 .first-container{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--branco);
-    width: 100%;
-    height: 80%;
-    margin-top: 60px;
+    width: 1050px;
+    height: 430px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--preto);
 }
 
 .infor-pessoal{
     font-size: 1.4rem;
-    padding: 15px;
     font-family: "Righteous", sans-serif;
+}
+
+.infor-pessoal h4 strong{
+    color: var(--vermelho);
 }
 
 .infor-pessoal span{
     position: relative;
+    font-family: "Righteous", sans-serif;
+    font-weight: 100;
+    /* Adicionando a frase antes do apan */
+    &::before{
+        content: " ";
+        color: var(--vermelho);
+        animation: frase 20s infinite;  
+    }
 
     /* Adicionando o cursor depois do span */
     &::after{
@@ -121,15 +148,9 @@ body{
         right: -10px;
         width: calc(100% + 13px);
         background-color: var(--preto);
-        animation: cursor .6s infinite;
+        animation: cursor .8s infinite, revelarFrase 20s steps(15) infinite;
     }
 
-    /* Adicionando a frase antes do apan */
-    &::before{
-        content: " ";
-        color: var(--vermelho);
-        animation: frase 20s infinite;  
-    }
 }
 
 @keyframes frase{
@@ -142,6 +163,16 @@ body{
     0%{
         border-left: 2px solid var(--preto);
     }
+}
+
+@keyframes revelarFrase {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+
+    5%, 20%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 13px);
+    } 
 }
 /* Estilizandoa a div que dará destaque a imagem */
 .box-img{
@@ -182,4 +213,109 @@ body{
     100%{
         transform: rotate(135deg);
     }
+}
+
+
+/* Estilizando a segunda section onde ficará as informações pessoais */
+.second-section{
+    background-color: var(--first-contente);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.second-container{
+    color: var(--branco);
+    width: 1050px;
+    height: 430px;
+}
+
+.second-container h2, .title{
+    text-align: center;
+    margin: 40px 0 60px 0;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+.second-container .tag, .tag{
+    color: var(--vermelho);
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.second-container .infor-texto{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infor-texto-column-one{
+    width: 400px;
+}
+.infor-texto-column-one p{
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+/* Estilizando o spin da segunda section */
+.custom-loader {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    color: var(--vermelho);
+    background: 
+      linear-gradient(currentColor 0 0) center/100% 3px,
+      linear-gradient(currentColor 0 0) center/3px 100%;
+    background-repeat: no-repeat;
+    animation: spin 5s infinite linear;
+  }
+  
+  .custom-loader::before,
+  .custom-loader::after {
+    content: "";
+    grid-area: 1/1;
+    background: repeating-conic-gradient(#0000 0 35deg,currentColor 0 90deg);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+    border-radius: 50%;
+  }
+  .custom-loader::after {
+    margin:20%;
+  }
+  
+  @keyframes spin {
+    100% {transform: rotate(1turn)}
+  }
+
+  /* Estilizando a terceira section onde vai ficar a parte sobre mim e gostos pesoais */
+
+.third-section{
+    background-color: var(--preto);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.third-content{
+    color: var(--branco);
+    height: 490px;
+    width: 1050px;
+}
+
+.third-content .sobre{
+
+    border: 2px solid var(--vermelho);
+    border-radius: 10px;
+}
+
+.third-content p{
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 10px;
 }

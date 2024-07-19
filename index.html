@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/index.css">
     <title>Portifólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header class="container-header">
         <nav class="container-nav">
             <div>
-                <h1 > <a class="logo" href="#">I.N.V</a></h1>
+                <h1 > <a class="logo" href="#">I.<span>N</span>.V </a></h1>
             </div>
             <ul>
                 <li>
-                    <label for="">
-                        <a href="#"> Informações Pessoais</a>
+                    <label>
+                        <a href="#one">Apresentação</a>
                     </label>
                    
                 </li>
@@ -40,12 +41,56 @@
         </nav>
     </header>
     <main class="container-main">
-        <section class="first-container">
-            <div class="infor-pessoal"><h1>Olá!, sou <span></span> </h1> 
-                <h4> < Em construção para o<strong style="color: red;"> amanhã </strong>/></h4>
+        <section class="first-section">
+            <div class="first-container">
+                <div class="infor-pessoal"><h1>Olá!, sou <span></span> </h1> 
+                    <h4>Desenvolvedor Front-End</h4>
+                    <h4><strong>Em construção para o amanhã </strong></h4>
+                </div>
+                <div class="box-img">
+                    <img src="src/img/perfil.png" alt="Minha imagem de perfil">
+                </div>
             </div>
-            <div class="box-img">
-                <img src="src/img/perfil.png" alt="Minha imagem de perfil">
+        </section>
+
+        <section id="one" class="second-section">
+            <div  class="second-container">
+                <h2 class="title">
+                    <i class="bi bi-chevron-left tag"></i>
+                    Apresentação
+                    <i class="bi bi-chevron-right tag"></i>
+                </h2>
+                <div class="infor-texto">
+                    <div class="custom-loader"></div>
+                    <div class="infor-texto-column-one">
+                        <p>
+                            Meu nome é <strong>Ismael Nascimento Vieira</strong>, tenho 21 ano. Atualmente estou cursando <span>Engenharia de Software</span>, focado no desenvolvimento Front-End
+                        </p>
+                    </div>
+                    <div class="infor-texto-column-two">
+                        <div class="custom-loader"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third-section">
+            <div class="third-content">
+                <h2 class="title">
+                    <i class="bi bi-chevron-left tag"></i>
+                    Sobre
+                    <i class="bi bi-chevron-right tag"></i>
+                </h2>
+                <div class="sobre">
+                    <p>
+                        Sou dedicado e disciplinado com uma paixão pela programação. Tenho experiência básica em HTML5, CSS3, JAVASCRIPT e MySQL. Estou constantemente em busca de inovações e me sinto motivado em resolver problemas complexos através da tecnologia.
+                    </p>
+                    <p>
+                        Tenho capacidade de aprender rapidamente novos conceitos e tecnologias. Trabalhar em equipe é algo que valorizo, pois acredito que a colaboração é essencial para o sucesso de qualquer projeto. Sou detalhista e organizado.
+    
+                    </p>
+                </div>
+
             </div>
         </section>
     </main>
