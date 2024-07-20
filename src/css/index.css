@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin: 0;
@@ -96,14 +97,12 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .first-section{
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 60px;
     background-color: var(--preto);
 }
@@ -114,7 +113,7 @@ body{
     align-items: center;
     color: var(--branco);
     width: 1050px;
-    height: 300px;
+    height: 430px;
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: var(--preto);
@@ -122,7 +121,6 @@ body{
 
 .infor-pessoal{
     font-size: 1.4rem;
-    padding: 15px;
     font-family: "Righteous", sans-serif;
 }
 
@@ -189,7 +187,6 @@ body{
     border-radius: 15px;
     right: 50px;
     animation: box-img 2s linear infinite;
-    background-color: var(--);
 }
 .first-container img{
     border-radius: 50%;
@@ -223,5 +220,67 @@ body{
 .second-section{
     background-color: var(--first-contente);
     width: 100%;
-    height: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
 }
+
+.second-container{
+    color: var(--branco);
+    width: 1050px;
+    height: 600px;
+}
+
+.second-container h2{
+    text-align: center;
+    margin: 40px 0 60px 0;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+.second-container .tag{
+    color: var(--vermelho);
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.second-container .infor-texto{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infor-texto-column-one{
+    width: 400px;
+}
+/* Estilizando o spin da segunda section */
+.custom-loader {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    color: var(--vermelho);
+    background: 
+      linear-gradient(currentColor 0 0) center/100% 3px,
+      linear-gradient(currentColor 0 0) center/3px 100%;
+    background-repeat: no-repeat;
+    animation: s8 2s infinite;
+  }
+  
+  .custom-loader::before,
+  .custom-loader::after {
+    content: "";
+    grid-area: 1/1;
+    background: repeating-conic-gradient(#0000 0 35deg,currentColor 0 90deg);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+    border-radius: 50%;
+  }
+  .custom-loader::after {
+    margin:20%;
+  }
+  
+  @keyframes s8 {
+    100% {transform: rotate(1turn)}
+  }
