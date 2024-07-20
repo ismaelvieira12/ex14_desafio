@@ -220,18 +220,19 @@ body{
 .second-section{
     background-color: var(--first-contente);
     width: 100%;
-    height: 600px;
+    height: 500px;
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 
 .second-container{
     color: var(--branco);
     width: 1050px;
-    height: 600px;
+    height: 430px;
 }
 
-.second-container h2{
+.second-container h2, .title{
     text-align: center;
     margin: 40px 0 60px 0;
     font-family: "Saira", sans-serif;
@@ -239,7 +240,7 @@ body{
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
-.second-container .tag{
+.second-container .tag, .tag{
     color: var(--vermelho);
     font-size: 30px;
     padding: 20px;
@@ -256,6 +257,11 @@ body{
 .infor-texto-column-one{
     width: 400px;
 }
+.infor-texto-column-one p{
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
 /* Estilizando o spin da segunda section */
 .custom-loader {
     width: 200px;
@@ -266,7 +272,7 @@ body{
       linear-gradient(currentColor 0 0) center/100% 3px,
       linear-gradient(currentColor 0 0) center/3px 100%;
     background-repeat: no-repeat;
-    animation: s8 2s infinite;
+    animation: spin 5s infinite linear;
   }
   
   .custom-loader::before,
@@ -281,6 +287,34 @@ body{
     margin:20%;
   }
   
-  @keyframes s8 {
+  @keyframes spin {
     100% {transform: rotate(1turn)}
   }
+
+  /* Estilizando a terceira section onde vai ficar a parte sobre mim e gostos pesoais */
+
+.third-section{
+    background-color: var(--preto);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.third-content{
+    color: var(--branco);
+    height: 490px;
+    width: 1050px;
+}
+
+.third-content .sobre{
+    border: 1px solid var(--vermelho);
+    border-radius: 5px;
+}
+
+.third-content p{
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 10px;
+}
