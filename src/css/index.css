@@ -31,8 +31,8 @@ body{
     position: fixed;
     display: flex;
     justify-content: center;
-    width: 1500px;
     height: 60px;
+    width: 100vw;
     background-color: var(--preto);
     box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
     padding: 0.5rem;
@@ -44,7 +44,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 1050px;
 }
 
 .logo{
@@ -94,16 +94,16 @@ body{
 /* Estilizando meu content */
 .container-main{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #e53939;
 }
 .first-section{
     width: 100%;
     height: 500px;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
     background-color: var(--preto);
 }
 .first-container{
@@ -223,7 +223,6 @@ body{
     height: 500px;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
 }
 
 .second-container{
@@ -299,7 +298,6 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
 }
 .third-content{
     color: var(--branco);
@@ -308,9 +306,8 @@ body{
 }
 
 .third-content .sobre{
-
-    border: 2px solid var(--vermelho);
-    border-radius: 10px;
+    border: 1px solid var(--vermelho);
+    border-radius: 5px;
 }
 
 .third-content p{
