@@ -128,6 +128,9 @@ body{
     font-size: 1.4rem;
     font-family: "Righteous", sans-serif;
 }
+.infor-pessoal p{
+    color: var(--branco);
+}
 
 .infor-pessoal p strong{
     color: var(--vermelho);
@@ -322,12 +325,12 @@ body{
     font-size: 20px;
     text-align: justify;
     padding: 20px 10px;
+    color: var(--branco);
 }
 
 /* Estilizando a quarta section onde ficará meus gostos pessoais */
 .fourth-section{
     background-color: var(--first-contente);
-    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -336,4 +339,34 @@ body{
 
 .fourth-section .fourth-content{
     width: 1050px;
+}
+
+.gosto-pessoal .p1, .p2, .p3, .p4, .p5{
+    padding: 15px 0;
+    margin: 20px 0;
+    background-color: var(--active);
+    border-radius: 8px;
+    &:hover{
+        background-color: var(--first-contente);
+        border: 1px solid var(--active);
+        transition: .2s;
+    }
+}
+.p1 h3, p, .p5,  h3 ,p{
+    color: var(--first-contente);
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 15px;
+   &:hover{
+    color: var(--branco);
+   }
+}
+.p2, .p3, .p4, .p5 p{
+    padding-left: 10px;
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 15px;
+
 }
