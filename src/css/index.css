@@ -16,6 +16,7 @@
     --branco: #ffffff;
 
     --first-contente: #0f0f0f;
+    --active: #e16969;
 }
 
 body{
@@ -89,6 +90,10 @@ body{
         background-color: var(--vermelho);
         width: 100%;
     }
+
+    &:active{
+        color: var(--active);
+    }
 }
 
 /* Estilizando meu content */
@@ -97,7 +102,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #e53939;
+    background-color: var(--preto);
 }
 .first-section{
     width: 100%;
@@ -124,7 +129,7 @@ body{
     font-family: "Righteous", sans-serif;
 }
 
-.infor-pessoal h4 strong{
+.infor-pessoal p strong{
     color: var(--vermelho);
 }
 
@@ -229,11 +234,12 @@ body{
     color: var(--branco);
     width: 1050px;
     height: 430px;
+    background-color: var(--first-contente);
 }
 
 .second-container h2, .title{
     text-align: center;
-    margin: 40px 0 60px 0;
+    margin: 55px 0 60px 0;
     font-family: "Saira", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -315,4 +321,18 @@ body{
     font-size: 20px;
     text-align: justify;
     padding: 20px 10px;
+}
+
+/* Estilizando a quarta section onde ficará meus gostos pessoais */
+.fourth-section{
+    background-color: var(--first-contente);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--branco) ;
+}
+
+.fourth-section .fourth-content{
+    width: 1050px;
 }
