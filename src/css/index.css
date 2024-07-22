@@ -248,6 +248,7 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    color: var(--branco);
 }
 .second-container .tag, .tag{
     color: var(--vermelho);
@@ -329,7 +330,7 @@ body{
 }
 
 /* Estilizando a quarta section onde ficará meus gostos pessoais */
-.fourth-section{
+.three-section{
     background-color: var(--first-contente);
     width: 100%;
     display: flex;
@@ -337,23 +338,22 @@ body{
     color: var(--branco) ;
 }
 
-.fourth-section .fourth-content{
+.three-section .three-content{
     width: 1050px;
+    margin-bottom: 40px;
 }
 
-.fourth-content .gosto{
+.three-content .gosto{
     background-color: var(--active);
     margin: 25px 0;
     padding: 10px 10px;
     border-radius: 8px;
     color: var(--branco);
-    opacity: 0.5;
     &:hover{
         background-color: var(--first-contente);
-        border: 1px solid var(--active);
+        border: 2px solid var(--active);
         color: var(--branco);
         transition: .2s;
-        opacity: 1;
     }
 }
 
@@ -364,32 +364,17 @@ body{
     text-align: justify;
     padding-bottom: 15px;
 }
-/* .gosto-pessoal .p1, .p2, .p3, .p4, .p5{
-    padding: 15px 0;
-    margin: 20px 0;
-    background-color: var(--active);
-    border-radius: 8px;
-    &:hover{
-        background-color: var(--first-contente);
-        border: 1px solid var(--active);
-        transition: .2s;
-    }
-}
-.p1 h3, p, .p5,  h3 ,p{
-    color: var(--first-contente);
-    font-family: "Saira", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    padding: 20px 15px;
-   &:hover{
-    color: var(--branco);
-   }
-}
-.p2, .p3, .p4, .p5 p{
-    padding-left: 10px;
-    font-family: "Saira", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    padding: 20px 15px;
 
-} */
+.fourth-section{
+    background-color: var(--preto);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--branco) ;
+}
+
+.fourth-section .fourth-content{
+    width: 1050px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
