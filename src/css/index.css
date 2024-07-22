@@ -359,11 +359,7 @@ body{
     color: var(--branco);
     &:hover{
         background-color: var(--first-contente);
-<<<<<<< Updated upstream
         border: 2px solid var(--vermelho);
-=======
-        border: 2px solid var(--active);
->>>>>>> Stashed changes
         color: var(--branco);
         transition: .2s;
     }
