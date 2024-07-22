@@ -344,7 +344,25 @@ body{
 .fourth-content .gosto{
     background-color: var(--active);
     margin: 25px 0;
-    padding: 20px 10px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: var(--branco);
+    opacity: 0.5;
+    &:hover{
+        background-color: var(--first-contente);
+        border: 1px solid var(--active);
+        color: var(--branco);
+        transition: .2s;
+        opacity: 1;
+    }
+}
+
+.gosto .descrition{
+    
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 15px;
 }
 /* .gosto-pessoal .p1, .p2, .p3, .p4, .p5{
     padding: 15px 0;
