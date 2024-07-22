@@ -341,7 +341,7 @@ body{
     width: 1050px;
 }
 
-.gosto-pessoal .p1, .p2, .p3, .p4, .p5{
+/* .gosto-pessoal .p1, .p2, .p3, .p4, .p5{
     padding: 15px 0;
     margin: 20px 0;
     background-color: var(--active);
@@ -369,4 +369,4 @@ body{
     text-align: justify;
     padding: 20px 15px;
 
-}
+} */
