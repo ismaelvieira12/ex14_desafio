@@ -341,6 +341,11 @@ body{
     width: 1050px;
 }
 
+.fourth-content .gosto{
+    background-color: var(--active);
+    margin: 25px 0;
+    padding: 20px 10px;
+}
 /* .gosto-pessoal .p1, .p2, .p3, .p4, .p5{
     padding: 15px 0;
     margin: 20px 0;
