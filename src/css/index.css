@@ -19,6 +19,7 @@
     --active: #e16969;
 }
 
+
 body{
     width: 100vw;
     height: 100vh;
@@ -26,6 +27,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 /* Estilizando o header e o menu */
 .container-header{
@@ -130,6 +132,12 @@ body{
 }
 .infor-pessoal p{
     color: var(--branco);
+}
+
+.infor-pessoal h1 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
 }
 
 .infor-pessoal p strong{
@@ -248,6 +256,7 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    color: var(--branco);
 }
 .second-container .tag, .tag{
     color: var(--vermelho);
@@ -329,8 +338,43 @@ body{
 }
 
 /* Estilizando a quarta section onde ficará meus gostos pessoais */
-.fourth-section{
+.three-section{
     background-color: var(--first-contente);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--branco) ;
+}
+
+.three-section .three-content{
+    width: 1050px;
+    margin-bottom: 40px;
+}
+
+.three-content .gosto{
+    background-color: var(--active);
+    margin: 25px 0;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: var(--branco);
+    &:hover{
+        background-color: var(--first-contente);
+        border: 2px solid var(--active);
+        color: var(--branco);
+        transition: .2s;
+    }
+}
+
+.gosto .descrition{
+    
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+.fourth-section{
+    background-color: var(--preto);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -339,34 +383,6 @@ body{
 
 .fourth-section .fourth-content{
     width: 1050px;
-}
-
-.gosto-pessoal .p1, .p2, .p3, .p4, .p5{
-    padding: 15px 0;
-    margin: 20px 0;
-    background-color: var(--active);
-    border-radius: 8px;
-    &:hover{
-        background-color: var(--first-contente);
-        border: 1px solid var(--active);
-        transition: .2s;
-    }
-}
-.p1 h3, p, .p5,  h3 ,p{
-    color: var(--first-contente);
-    font-family: "Saira", sans-serif;
-    font-size: 20px;
     text-align: justify;
-    padding: 20px 15px;
-   &:hover{
-    color: var(--branco);
-   }
-}
-.p2, .p3, .p4, .p5 p{
-    padding-left: 10px;
-    font-family: "Saira", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    padding: 20px 15px;
-
+    margin-bottom: 40px;
 }
