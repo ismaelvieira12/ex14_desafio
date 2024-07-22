@@ -19,6 +19,7 @@
     --active: #e16969;
 }
 
+
 body{
     width: 100vw;
     height: 100vh;
@@ -26,6 +27,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 /* Estilizando o header e o menu */
 .container-header{
@@ -130,6 +132,12 @@ body{
 }
 .infor-pessoal p{
     color: var(--branco);
+}
+
+.infor-pessoal h1 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 100;
+    font-size: 40px;
 }
 
 .infor-pessoal p strong{
