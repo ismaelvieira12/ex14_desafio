@@ -52,15 +52,18 @@ body{
 
 .logo{
     color: var(--branco);
-    font-size: 2rem;
+    font-size: 40px;
     cursor: pointer;
     margin-top: 0.2rem;
     font-weight: lighter;
     text-decoration: none;
+    font-family: "Righteous", sans-serif;
+    font-weight: 100;
 }
 .logo span{
     color: var(--vermelho);
     font-weight: bold;
+    font-family: "Righteous", sans-serif;
 }
 
 .container-nav ul{
@@ -107,12 +110,11 @@ body{
     background-color: var(--preto);
 }
 .first-section{
-    width: 100%;
-    min-height: 100vh;
     display: grid;
     place-items: center;
     align-items: center;
-    background-color: var(--preto);
+    min-height: 100vh;
+    background-color: var(--first-contente);
 }
 .first-container{
     position: relative;
@@ -124,7 +126,7 @@ body{
     height: 430px;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: var(--preto);
+    background-color: var(--first-contente);
 }
 
 .infor-pessoal{
@@ -164,7 +166,7 @@ body{
         border-left: 2px solid var(--vermelho);
         right: -10px;
         width: calc(100% + 13px);
-        background-color: var(--preto);
+        background-color: var(--first-contente);
         animation: cursor .8s infinite, revelarFrase 20s steps(15) infinite;
     }
 
@@ -172,7 +174,7 @@ body{
 
 @keyframes frase{
     0%, 100%{
-        content: "Ismael Nasicmento Vieira"
+        content: "Ismael Nascimento Vieira"
     }
 }
 
@@ -201,41 +203,50 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
     right: 50px;
     animation: box-img 2s linear infinite;
-    background-color: var(--);
+    background-color: var(--first-contente);
+
+    &::before{
+        position: absolute;
+        content: "";
+        border-radius: 10px;
+        background-image:url("../img/perfil.jpeg");
+        width: 100%;
+        height: 100%;
+    }
 }
 .first-container img{
-    border-radius: 50%;
     width: 200px;
+    border-radius: 50%;
     animation: img 2s linear infinite;
 }
 
 /* Rotação da div destáque */
 @keyframes box-img {
     0%{
-        transform: rotate(135deg);
+        transform: rotate(-135deg);
     }
     100%{
-        transform: rotate(-135deg);
+        transform: rotate(135deg);
     }
 }
 /* Centralizando a imagem */
 @keyframes img {
     0%{
-        transform: rotate(-135deg);
+        transform: rotate(135deg);
     }
 
     100%{
-        transform: rotate(135deg);
+        transform: rotate(-135deg);
     }
 }
 
 
 /* Estilizando a segunda section onde ficará as informações pessoais */
 .second-section{
-    background-color: var(--first-contente);
+    background-color: var(--preto);
     width: 100%;
     height: 500px;
     display: flex;
@@ -246,7 +257,7 @@ body{
     color: var(--branco);
     width: 1050px;
     height: 430px;
-    background-color: var(--first-contente);
+    background-color: var(--preto);
 }
 
 .second-container h2, .title{
@@ -312,7 +323,7 @@ body{
   /* Estilizando a terceira section onde vai ficar a parte sobre mim e gostos pesoais */
 
 .third-section{
-    background-color: var(--preto);
+    background-color: var(--first-contente);
     height: 500px;
     width: 100%;
     display: flex;
@@ -339,7 +350,7 @@ body{
 
 /* Estilizando a quarta section onde ficará meus gostos pessoais */
 .three-section{
-    background-color: var(--first-contente);
+    background-color: var(--preto);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -373,8 +384,27 @@ body{
     padding-bottom: 15px;
 }
 
+.spin{
+    position: relative;
+    border: 2px solid var(--vermelho);
+    padding: 20px;
+    border-radius: 10px;
+
+    &::before{
+        position: absolute;
+        content: "";
+        background-color: var(--branco);
+        opacity: 0.1;
+        width: 99%;
+        height: 98%;
+        top: 5px;
+        left: 5px;
+        border-radius: 8px;
+    }
+}
+
 .fourth-section{
-    background-color: var(--preto);
+    background-color: var(--first-contente);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -384,5 +414,6 @@ body{
 .fourth-section .fourth-content{
     width: 1050px;
     text-align: justify;
+    margin-top: 60px;
     margin-bottom: 40px;
 }
