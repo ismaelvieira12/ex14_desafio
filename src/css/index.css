@@ -228,7 +228,6 @@ body{
     0%{
         transform: rotate(-135deg);
     }
-
     100%{
         transform: rotate(135deg);
     }
@@ -337,7 +336,7 @@ body{
 }
 
 .third-content .sobre{
-    border: 2px solid var(--vermelho);
+    border: 1px solid var(--vermelho);
     border-radius: 5px;
 }
 
@@ -376,7 +375,9 @@ body{
         transition: .2s;
     }
 }
-.descrition{
+
+.gosto .descrition{
+    
     font-family: "Saira", sans-serif;
     font-size: 20px;
     text-align: justify;
@@ -413,7 +414,6 @@ body{
 .fourth-section .fourth-content{
     width: 1050px;
     text-align: justify;
+    margin-top: 60px;
     margin-bottom: 40px;
 }
-
-
