@@ -366,13 +366,14 @@ body{
     background-color: var(--active);
     margin: 25px 0;
     padding: 10px 10px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: var(--branco);
     &:hover{
         background-color: var(--first-contente);
         border: 2px solid var(--vermelho);
         color: var(--branco);
         transition: .2s;
+        box-shadow: 2px 2px 25px 5px rgba(255, 0, 0, 0.561);
     }
 }
 
@@ -416,4 +417,12 @@ body{
     text-align: justify;
     margin-top: 60px;
     margin-bottom: 40px;
+}
+
+.text-motiva{
+    
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 15px;
 }
