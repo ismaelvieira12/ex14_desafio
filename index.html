@@ -1,388 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/index.css">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="container-header">
+        <nav class="container-nav">
+            <div>
+                <h1 > <a class="logo" href="#">I.<span>N</span>.V </a></h1>
+            </div>
+            <ul>
+                <li>
+                    <label>
+                        <a href="#one">Apresentação</a>
+                    </label>
+                   
+                </li>
+                <li>
+                    <label>
+                        <a href="#two">Sobre</a>
+                    </label>
+                    
+                </li>
+                <li>
+                    <label>
+                        <a href="#three">Gostos Pessoais</a>
+                    </label>
+                    
+                </li>
+                <li>
+                    <label>
+                        <a href="#four">Motivações</a>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-main">
+        <section class="first-section">
+            <div class="first-container">
+                <div class="infor-pessoal"><h1>Olá! sou <span></span> </h1> 
+                    <p>Desenvolvedor Front-End</p>
+                    <p><strong>Em construção para o amanhã </strong></p>
+                </div>
+                <div class="box-img">
+                    <img src="src/img/perfil.png" alt="Minha imagem de perfil">
+                </div>
+            </div>
+        </section>
 
-@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Saira, sans-serif;
-}
+        <!-- o conteudo sobre mim irá começar aqui -->
+        <section id="one" class="second-section">
+            <div  class="second-container">
+                <h2 class="title">
+                    <i class="bi bi-chevron-left tag"></i>
+                    Apresentação
+                    <i class="bi bi-chevron-right tag"></i>
+                </h2>
+                <div class="infor-texto">
+                    <div class="custom-loader"></div>
+                    <div class="infor-texto-column-one">
+                        <p>
+                            Meu nome é <strong>Ismael Nascimento Vieira</strong>, tenho 21 ano. Atualmente estou cursando <span>Engenharia de Software</span>, focado no desenvolvimento Front-End
+                        </p>
+                    </div>
+                    <div class="infor-texto-column-two">
+                        <div class="custom-loader"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-:root{
-    /* Paleta de cores */
-    --preto: #000000;
-    --vermelho: #e53939;
-    --branco: #ffffff;
-
-    --first-contente: #0f0f0f;
-    --active: #e16969;
-}
-
-
-body{
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--preto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        <section id="two" class="third-section">
+            <div class="third-content">
+                <h2 class="title">
+                    <i class="bi bi-chevron-left tag"></i>
+                    Sobre
+                    <i class="bi bi-chevron-right tag"></i>
+                </h2>
+                <div class="sobre">
+                    <p>
+                        Sou dedicado e disciplinado com uma paixão pela programação. Tenho experiência básica em HTML5, CSS3, JAVASCRIPT e MySQL. Estou constantemente em busca de inovações e me sinto motivado em resolver problemas complexos através da tecnologia.
+                    </p>
+                    <p>
+                        Tenho capacidade de aprender rapidamente novos conceitos e tecnologias. Trabalhar em equipe é algo que valorizo, pois acredito que a colaboração é essencial para o sucesso de qualquer projeto. Sou detalhista e organizado.
     
-}
-/* Estilizando o header e o menu */
-.container-header{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    width: 100vw;
-    background-color: var(--preto);
-    box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
-    padding: 0.5rem;
-    top: 0px;
-    z-index: 2;
-}
+                    </p>
+                </div>
+            </div>
+        </section>
 
-.container-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1050px;
-}
+        <section id="three" class="three-section">
+            <div class="three-content">
+                <h2 class="title">
+                    <i class="bi bi-chevron-left tag"></i>
+                    Gostos Pessoais
+                    <i class="bi bi-chevron-right tag"></i>
+                </h2>
+                <div class="gosto-pessoal">
+                    <div class="gosto">
+                        <h3 class="descrition">Sites com um layout dark</h3>
+                        
+                        <p class="descrition">É uma opinião minha sobre as paletas de cores, na minha opinião temas escuros tira menos atenção e deixam o usuário mais focado no conteudo em si. </p>
+                    </div>
+                    <div class="gosto">
+                        <h3 class="descrition">
+                            Detalhista
+                        </h3>
+                        <p class="descrition">Acho que vale a pena sempre explorar o máximo que conseguir pra chamar mais atenção do usuário, 
+                            a final se conseguir chamar despertar atenção do usuário mais chance dele retornar novamente.
+                        </p>
+                    </div>
+                    <div class="gosto">
+                        <h3 class="descrition">O CSS disperta mais atenção</h3>
+                        <p class="descrition">Assim como ja mensionei se souber usar de forma certa o CCS pode ajudar a chamar mais atenção</p>
+                    </div>
+                    <div class="gosto">
+                        <h3 class="descrition">Pensamento criativo</h3>
+                        <p class="descrition">Ter um Pensamento criativo ajuda sempre</p>
+                    </div>
 
-.logo{
-    color: var(--branco);
-    font-size: 2rem;
-    cursor: pointer;
-    margin-top: 0.2rem;
-    font-weight: lighter;
-    text-decoration: none;
-}
-.logo span{
-    color: var(--vermelho);
-    font-weight: bold;
-}
+                    <div class="gosto">
+                        <h3 class="descrition">Proatividade</h3>
+                        <p class="descrition">Sou proativo, pois acredito que uma pessoa proativa vale por dois. Isso me ajuda a não espera pelo outros uma atitude que eu tambem posso fazer ou posso aprender a fazer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.container-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
+        <!-- adicionando a ultima section -->
+        <section id="four" class="fourth-section">
+            <div class="fourth-content">
+                <h3 class="title">
+                    <i class="bi bi-chevron-left tag"></i>
+                    Motivações
+                    <i class="bi bi-chevron-right tag"></i>
+                </h3>
+                <p class="descrition">
+                       <strong> Realiza um Sonho:</strong> Para muitos, a programação é mais do que apenas uma profissão; é a realização de um sonho de criar, inovar e impactar o mundo através da tecnologia. Desde jovens, a ideia de construir software sempre fascinou e agora se torna uma realidade concreta. <br>
 
-.container-nav ul li a{
-    text-decoration: none;
-    color: var(--branco);
-    font-family: "Saira Semi Condensed", sans-serif;
-    padding: 10px;
-    position: relative;
-    transition: 0.3s linear;
-    &::after{
-        content: " ";
-        position: absolute;
-        width: 0%;
-        height: 1px;
-        border-radius: 20px;
-        bottom: 5px;
-        left: 10px;
-        background-color: var(--vermelho);
-        transition: 0.3s linear;
-    }
+                     <strong> Sempre Chamou Atenção:</strong> Desde o início, a lógica e a capacidade de resolver problemas através do código sempre foram fascinantes. A complexidade e a elegância das soluções tecnológicas continuam a atrair e desafiar. <br>
 
-    &:hover::after{
-        background-color: var(--vermelho);
-        width: 100%;
-    }
+                     <strong> É uma Boa Área de Atuação:</strong> A demanda por profissionais de tecnologia só cresce, garantindo estabilidade e oportunidades de crescimento na carreira. A constante evolução e as novas tecnologias mantêm a área empolgante e promissora. <br>
 
-    &:active{
-        color: var(--active);
-    }
-}
+                     <strong> Vejo Oportunidades de Carreira:</strong> A flexibilidade e a variedade de caminhos dentro da programação permitem explorar diferentes especializações e nichos de mercado. Isso não só oferece oportunidades de desenvolvimento pessoal, mas também profissional. <br>
 
-/* Estilizando meu content */
-.container-main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--preto);
-}
-.first-section{
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    align-items: center;
-    background-color: var(--preto);
-}
-.first-container{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--branco);
-    width: 1050px;
-    height: 430px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: var(--preto);
-}
+                    Em resumo, a motivação na programação é impulsionada pela paixão por criar, resolver problemas e contribuir para um campo dinâmico e vital para o futuro.
+                </p>
+            </div>
+        </section>
+    </main>
 
-.infor-pessoal{
-    font-size: 1.4rem;
-    font-family: "Righteous", sans-serif;
-}
-.infor-pessoal p{
-    color: var(--branco);
-}
-
-.infor-pessoal h1 {
-    font-family: "Righteous", sans-serif;
-    font-weight: 100;
-    font-size: 40px;
-}
-
-.infor-pessoal p strong{
-    color: var(--vermelho);
-}
-
-.infor-pessoal span{
-    position: relative;
-    font-family: "Righteous", sans-serif;
-    font-weight: 100;
-    /* Adicionando a frase antes do apan */
-    &::before{
-        content: " ";
-        color: var(--vermelho);
-        animation: frase 20s infinite;  
-    }
-
-    /* Adicionando o cursor depois do span */
-    &::after{
-        content: " ";
-        position: absolute;
-        height: 100%;
-        border-left: 2px solid var(--vermelho);
-        right: -10px;
-        width: calc(100% + 13px);
-        background-color: var(--preto);
-        animation: cursor .8s infinite, revelarFrase 20s steps(15) infinite;
-    }
-
-}
-
-@keyframes frase{
-    0%, 100%{
-        content: "Ismael Nasicmento Vieira"
-    }
-}
-
-@keyframes cursor {
-    0%{
-        border-left: 2px solid var(--preto);
-    }
-}
-
-@keyframes revelarFrase {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-        width: 0;
-    }
-
-    5%, 20%, 40%, 45%, 60%, 65%, 80%, 85%{
-        width: calc(100% + 13px);
-    } 
-}
-/* Estilizandoa a div que dará destaque a imagem */
-.box-img{
-    position: absolute;
-    border: 2px solid var(--vermelho);
-    box-shadow: 2px 2px 50px rgba(252, 60, 60, 0.607);
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    right: 50px;
-    animation: box-img 2s linear infinite;
-    background-color: var(--);
-}
-.first-container img{
-    border-radius: 50%;
-    width: 200px;
-    animation: img 2s linear infinite;
-}
-
-/* Rotação da div destáque */
-@keyframes box-img {
-    0%{
-        transform: rotate(135deg);
-    }
-    100%{
-        transform: rotate(-135deg);
-    }
-}
-/* Centralizando a imagem */
-@keyframes img {
-    0%{
-        transform: rotate(-135deg);
-    }
-
-    100%{
-        transform: rotate(135deg);
-    }
-}
-
-
-/* Estilizando a segunda section onde ficará as informações pessoais */
-.second-section{
-    background-color: var(--first-contente);
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-}
-
-.second-container{
-    color: var(--branco);
-    width: 1050px;
-    height: 430px;
-    background-color: var(--first-contente);
-}
-
-.second-container h2, .title{
-    text-align: center;
-    margin: 55px 0 60px 0;
-    font-family: "Saira", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:"wdth" 100;
-    color: var(--branco);
-}
-.second-container .tag, .tag{
-    color: var(--vermelho);
-    font-size: 30px;
-    padding: 20px;
-}
-
-
-.second-container .infor-texto{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.infor-texto-column-one{
-    width: 400px;
-}
-.infor-texto-column-one p{
-    font-family: "Saira", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-}
-/* Estilizando o spin da segunda section */
-.custom-loader {
-    width: 200px;
-    height: 200px;
-    display: grid;
-    color: var(--vermelho);
-    background: 
-      linear-gradient(currentColor 0 0) center/100% 3px,
-      linear-gradient(currentColor 0 0) center/3px 100%;
-    background-repeat: no-repeat;
-    animation: spin 5s infinite linear;
-  }
-  
-  .custom-loader::before,
-  .custom-loader::after {
-    content: "";
-    grid-area: 1/1;
-    background: repeating-conic-gradient(#0000 0 35deg,currentColor 0 90deg);
-    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
-    border-radius: 50%;
-  }
-  .custom-loader::after {
-    margin:20%;
-  }
-  
-  @keyframes spin {
-    100% {transform: rotate(1turn)}
-  }
-
-  /* Estilizando a terceira section onde vai ficar a parte sobre mim e gostos pesoais */
-
-.third-section{
-    background-color: var(--preto);
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.third-content{
-    color: var(--branco);
-    height: 490px;
-    width: 1050px;
-}
-
-.third-content .sobre{
-    border: 1px solid var(--vermelho);
-    border-radius: 5px;
-}
-
-.third-content p{
-    font-family: "Saira", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    padding: 20px 10px;
-    color: var(--branco);
-}
-
-/* Estilizando a quarta section onde ficará meus gostos pessoais */
-.three-section{
-    background-color: var(--first-contente);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: var(--branco) ;
-}
-
-.three-section .three-content{
-    width: 1050px;
-    margin-bottom: 40px;
-}
-
-.three-content .gosto{
-    background-color: var(--active);
-    margin: 25px 0;
-    padding: 10px 10px;
-    border-radius: 8px;
-    color: var(--branco);
-    &:hover{
-        background-color: var(--first-contente);
-        border: 2px solid var(--vermelho);
-        color: var(--branco);
-        transition: .2s;
-    }
-}
-
-.gosto .descrition{
-    
-    font-family: "Saira", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    padding-bottom: 15px;
-}
-
-.fourth-section{
-    background-color: var(--preto);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: var(--branco) ;
-}
-
-.fourth-section .fourth-content{
-    width: 1050px;
-    text-align: justify;
-    margin-bottom: 40px;
-}
+    <script src="script.js"></script>
+</body>
+</html>
