@@ -37,7 +37,7 @@ body{
     height: 60px;
     width: 100vw;
     background-color: var(--preto);
-    box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
+    box-shadow: rgba(108, 106, 106, 0.25) 0px 4px 4px;
     padding: 0.5rem;
     top: 0px;
     z-index: 2;
@@ -203,7 +203,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
+    border-radius: 10% 30% 10% 30% / 30% 10% 30% 10%;
     right: 50px;
     animation: box-img 2s linear infinite;
     background-color: var(--first-contente);
@@ -211,8 +211,8 @@ body{
     &::before{
         position: absolute;
         content: "";
-        border-radius: 10px;
-        background-image:url("../img/perfil.jpeg");
+        border-radius: 10% 30% 10% 30% / 30% 10% 30% 10%;
+        background-image:url("../img/background.jpeg");
         width: 100%;
         height: 100%;
     }
@@ -371,6 +371,7 @@ body{
     &:hover{
         background-color: var(--first-contente);
         border: 2px solid var(--vermelho);
+        box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.436);
         color: var(--branco);
         transition: .2s;
     }
@@ -384,7 +385,7 @@ body{
     padding-bottom: 15px;
 }
 
-.spin{
+.fourth-content{
     position: relative;
     border: 2px solid var(--vermelho);
     padding: 20px;
@@ -401,6 +402,10 @@ body{
         left: 5px;
         border-radius: 8px;
     }
+
+    &:hover{
+        border: 2px solid var(--active);
+    }
 }
 
 .fourth-section{
@@ -416,4 +421,11 @@ body{
     text-align: justify;
     margin-top: 60px;
     margin-bottom: 40px;
+}
+
+.text-motivo{
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 15px;
 }
