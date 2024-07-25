@@ -110,8 +110,8 @@ body{
     background-color: var(--preto);
 }
 .first-section{
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: var(--first-contente);
@@ -251,6 +251,7 @@ body{
     height: 500px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .second-container{
@@ -258,6 +259,7 @@ body{
     width: 1050px;
     height: 430px;
     background-color: var(--preto);
+    margin-bottom: 60px;
 }
 
 .second-container h2, .title{
@@ -281,6 +283,7 @@ body{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .infor-texto-column-one{
@@ -370,7 +373,7 @@ body{
     color: var(--branco);
     &:hover{
         background-color: var(--first-contente);
-        border: 2px solid var(--vermelho);
+        border: 0.5px solid var(--vermelho);
         box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.436);
         color: var(--branco);
         transition: .2s;
@@ -428,4 +431,14 @@ body{
     font-size: 20px;
     text-align: justify;
     padding-bottom: 15px;
+}
+
+/* Criando a suavidade do site */
+
+[data-anime]{
+    opacity: 0;
+}
+
+.soft{
+    
 }
