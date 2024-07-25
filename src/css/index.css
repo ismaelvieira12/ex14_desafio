@@ -437,7 +437,7 @@ body{
 
 [data-anime]{
     opacity: 0;
-    transition: 0.9s;
+    transition: 0.3s;
 }
 
 [data-anime="right"]{
