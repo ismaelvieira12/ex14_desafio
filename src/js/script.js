@@ -1,12 +1,10 @@
-const threeSectionEl = document.querySelector('.three-section');
+// const threeSectionEl = document.querySelector('.three-section');
 
-const myObserver = new IntersectionObserver( (evento) => {
-    console.log(evento);
-})
+// const myObserver = new IntersectionObserver( (evento) => {
+//     console.log(evento);
+// })
 
-myObserver.observe(threeSectionEl);
-
-
+// myObserver.observe(threeSectionEl);
 
 
 // essa constante pegará todos os elementos que estiverem com a teg data-anime
@@ -30,5 +28,5 @@ function animateScroll(){
 }
 
 window.addEventListener('scroll', () => {
-    animateScroll()
+    animateScroll();
 })
