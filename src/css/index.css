@@ -58,10 +58,6 @@ body{
     font-weight: lighter;
     text-decoration: none;
 }
-.logo span{
-    color: var(--vermelho);
-    font-weight: bold;
-}
 
 .container-nav ul{
     display: flex;
@@ -111,7 +107,7 @@ body{
     place-items: center;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--preto);
+    background-color: var(--first-contente);
 }
 .first-container{
     position: relative;
@@ -123,7 +119,7 @@ body{
     height: 430px;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: var(--preto);
+    background-color: var(--first-contente);
 }
 
 .infor-pessoal{
@@ -163,7 +159,7 @@ body{
         border-left: 2px solid var(--vermelho);
         right: -10px;
         width: calc(100% + 13px);
-        background-color: var(--preto);
+        background-color: var(--first-contente);
         animation: cursor .8s infinite, revelarFrase 20s steps(15) infinite;
     }
 
@@ -171,7 +167,7 @@ body{
 
 @keyframes frase{
     0%, 100%{
-        content: "Ismael Nasicmento Vieira"
+        content: "Ismael Nascimento Vieira"
     }
 }
 
@@ -200,41 +196,50 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
     right: 50px;
     animation: box-img 2s linear infinite;
-    background-color: var(--);
+    background-color: var(--first-contente);
+
+    &::before{
+        position: absolute;
+        content: "";
+        border-radius: 10px;
+        background-image:url("../img/perfil.jpeg");
+        width: 100%;
+        height: 100%;
+    }
 }
 .first-container img{
-    border-radius: 50%;
     width: 200px;
+    border-radius: 50%;
     animation: img 2s linear infinite;
 }
 
 /* Rotação da div destáque */
 @keyframes box-img {
     0%{
-        transform: rotate(135deg);
+        transform: rotate(-135deg);
     }
     100%{
-        transform: rotate(-135deg);
+        transform: rotate(135deg);
     }
 }
 /* Centralizando a imagem */
 @keyframes img {
     0%{
-        transform: rotate(-135deg);
+        transform: rotate(135deg);
     }
 
     100%{
-        transform: rotate(135deg);
+        transform: rotate(-135deg);
     }
 }
 
 
 /* Estilizando a segunda section onde ficará as informações pessoais */
 .second-section{
-    background-color: var(--first-contente);
+    background-color: var(--preto);
     width: 100%;
     height: 500px;
     display: flex;
@@ -245,7 +250,7 @@ body{
     color: var(--branco);
     width: 1050px;
     height: 430px;
-    background-color: var(--first-contente);
+    background-color: var(--preto);
 }
 
 .second-container h2, .title{
@@ -311,7 +316,7 @@ body{
   /* Estilizando a terceira section onde vai ficar a parte sobre mim e gostos pesoais */
 
 .third-section{
-    background-color: var(--preto);
+    background-color: var(--first-contente);
     height: 500px;
     width: 100%;
     display: flex;
@@ -338,7 +343,7 @@ body{
 
 /* Estilizando a quarta section onde ficará meus gostos pessoais */
 .three-section{
-    background-color: var(--first-contente);
+    background-color: var(--preto);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -354,13 +359,14 @@ body{
     background-color: var(--active);
     margin: 25px 0;
     padding: 10px 10px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: var(--branco);
     &:hover{
         background-color: var(--first-contente);
         border: 2px solid var(--vermelho);
         color: var(--branco);
         transition: .2s;
+        box-shadow: 2px 2px 25px 5px rgba(255, 0, 0, 0.561);
     }
 }
 
@@ -388,7 +394,7 @@ body{
 }
 
 .fourth-section{
-    background-color: var(--preto);
+    background-color: var(--first-contente);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -402,3 +408,10 @@ body{
     margin-bottom: 40px;
 }
 
+.text-motiva{
+    
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 15px;
+}
