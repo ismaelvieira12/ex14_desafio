@@ -250,19 +250,16 @@ body{
 /* Estilizando a segunda section onde ficará as informações pessoais */
 .second-section{
     background-color: var(--preto);
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    height: 600px;
+    margin-bottom: 60px;
+} 
 
 .second-container{
     color: var(--branco);
     width: 1050px;
-    height: 430px;
+    height: 100%;
     background-color: var(--preto);
-    margin-bottom: 60px;
+    margin: auto;
 }
 
 .second-container h2, .title{
@@ -330,15 +327,14 @@ body{
 
 .third-section{
     background-color: var(--first-contente);
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 100%;    
+    margin-bottom: 60px;
 }
 .third-content{
     color: var(--branco);
     height: 490px;
     width: 1050px;
+    margin: auto;
 }
 
 .third-content .sobre{
@@ -357,15 +353,13 @@ body{
 /* Estilizando a quarta section onde ficará meus gostos pessoais */
 .three-section{
     background-color: var(--preto);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: var(--branco) ;
+    color: var(--branco);
+    margin-bottom: 60px;
 }
 
 .three-section .three-content{
     width: 1050px;
-    margin-bottom: 40px;
+    margin: auto;
 }
 
 .three-content .gosto{
@@ -385,7 +379,6 @@ body{
 }
 
 .gosto .descrition{
-    
     font-family: "Saira", sans-serif;
     font-size: 20px;
     text-align: justify;
@@ -397,28 +390,20 @@ body{
     border: 2px solid var(--vermelho);
     padding: 20px;
     border-radius: 10px;
+    margin: auto;
 
     &::before{
         position: absolute;
         content: "";
-        border: 2px solid var(--branco);
-        width: 100%;
-        height: 100%;
-    }
-
-    &:hover{
-        border: 2px solid var(--active);
+        background-color: var(--branco);
+        opacity: 0.1;
+        width: 99%;
+        height: 98%;
+        top: 5px;
+        left: 5px;
+        border-radius: 8px;
     }
 }
-
-.fourth-section{
-    background-color: var(--first-contente);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: var(--branco) ;
-}
-
 .fourth-section .fourth-content{
     width: 1050px;
     text-align: justify;
@@ -426,11 +411,12 @@ body{
     margin-bottom: 40px;
 }
 
-.text-motivo{
+.text-motiva{
     font-family: "Saira", sans-serif;
     font-size: 20px;
     text-align: justify;
     padding-bottom: 15px;
+    color: var(--branco);
 }
 
 /* Criando a suavidade do site */
@@ -451,8 +437,4 @@ body{
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
-}
-
-.soft{
-    
 }
