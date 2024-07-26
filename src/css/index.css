@@ -19,9 +19,6 @@
     --active: #e16969;
 }
 
-html{
-    scroll-behavior: smooth;    
-}
 
 body{
     width: 100vw;
@@ -40,7 +37,7 @@ body{
     height: 60px;
     width: 100vw;
     background-color: var(--preto);
-    box-shadow: rgba(108, 106, 106, 0.25) 0px 4px 4px;
+    box-shadow: rgba(61, 61, 61, 0.25) 0px 4px 4px;
     padding: 0.5rem;
     top: 0px;
     z-index: 2;
@@ -55,7 +52,7 @@ body{
 
 .logo{
     color: var(--branco);
-    font-size: 2rem;
+    font-size: 40px;
     cursor: pointer;
     margin-top: 0.2rem;
     font-weight: lighter;
@@ -113,8 +110,8 @@ body{
     background-color: var(--preto);
 }
 .first-section{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     align-items: center;
     min-height: 100vh;
     background-color: var(--first-contente);
@@ -250,16 +247,17 @@ body{
 /* Estilizando a segunda section onde ficará as informações pessoais */
 .second-section{
     background-color: var(--preto);
-    height: 600px;
-    margin-bottom: 60px;
-} 
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
 
 .second-container{
     color: var(--branco);
     width: 1050px;
-    height: 100%;
+    height: 430px;
     background-color: var(--preto);
-    margin: auto;
 }
 
 .second-container h2, .title{
@@ -283,7 +281,6 @@ body{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .infor-texto-column-one{
@@ -327,14 +324,15 @@ body{
 
 .third-section{
     background-color: var(--first-contente);
-    width: 100%;    
-    margin-bottom: 60px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .third-content{
     color: var(--branco);
     height: 490px;
     width: 1050px;
-    margin: auto;
 }
 
 .third-content .sobre{
@@ -353,18 +351,19 @@ body{
 /* Estilizando a quarta section onde ficará meus gostos pessoais */
 .three-section{
     background-color: var(--preto);
-    color: var(--branco);
-    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--branco) ;
 }
 
 .three-section .three-content{
     width: 1050px;
-    margin: auto;
+    margin-bottom: 40px;
 }
 
 .three-content .gosto{
     background-color: var(--active);
-    background-color: var(--vermelho);
     margin: 25px 0;
     padding: 10px 10px;
     border-radius: 4px;
@@ -380,6 +379,7 @@ body{
 }
 
 .gosto .descrition{
+    
     font-family: "Saira", sans-serif;
     font-size: 20px;
     text-align: justify;
@@ -388,6 +388,10 @@ body{
 
 .fourth-section{
     background-color: var(--first-contente);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--branco) ;
 }
 
 .fourth-content{
@@ -395,11 +399,6 @@ body{
     border: 2px solid var(--vermelho);
     padding: 20px;
     border-radius: 10px;
-    margin: auto;
-    width: 1050px;
-    text-align: justify;
-    margin-top: 60px;
-    margin-bottom: 40px;
 
     &::before{
         position: absolute;
@@ -425,26 +424,4 @@ body{
     font-size: 20px;
     text-align: justify;
     padding-bottom: 15px;
-    color: var(--branco);
-}
-
-/* Criando a suavidade do site */
-
-[data-anime]{
-    opacity: 0;
-    transition: 0.3s;
-}
-
-[data-anime="right"]{
-[data-anime="left"]{
-    transform: translate3d(-100px, 0px, 0px);
-}
-
-[data-anime="right"]{
-    transform: translate3d(100px, 0px, 0px);
-}
-
-[data-anime].animate{
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
 }
