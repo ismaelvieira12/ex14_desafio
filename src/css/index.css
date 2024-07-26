@@ -364,6 +364,7 @@ body{
 
 .three-content .gosto{
     background-color: var(--active);
+    background-color: var(--vermelho);
     margin: 25px 0;
     padding: 10px 10px;
     border-radius: 4px;
@@ -385,12 +386,20 @@ body{
     padding-bottom: 15px;
 }
 
+.fourth-section{
+    background-color: var(--first-contente);
+}
+
 .fourth-content{
     position: relative;
     border: 2px solid var(--vermelho);
     padding: 20px;
     border-radius: 10px;
     margin: auto;
+    width: 1050px;
+    text-align: justify;
+    margin-top: 60px;
+    margin-bottom: 40px;
 
     &::before{
         position: absolute;
@@ -427,6 +436,7 @@ body{
 }
 
 [data-anime="right"]{
+[data-anime="left"]{
     transform: translate3d(-100px, 0px, 0px);
 }
 
