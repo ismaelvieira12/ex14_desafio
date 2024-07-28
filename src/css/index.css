@@ -425,3 +425,12 @@ body{
 }
 
 /* Criando a suavidade do site */
+.hidden{
+    opacity: 0;
+    transition: 3s linear;
+}
+
+.show{
+    opacity: 1;
+    transition: 3s linear;
+}
