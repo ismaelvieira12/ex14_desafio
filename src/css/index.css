@@ -425,9 +425,3 @@ body{
 }
 
 /* Criando a suavidade do site */
-
-
-[data-anime].animate{
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-}
