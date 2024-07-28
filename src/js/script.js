@@ -1,10 +1,13 @@
-// const threeSectionEl = document.querySelector('.three-section');
 
-// const myObserver = new IntersectionObserver( (evento) => {
-//     console.log(evento);
-// })
+const myObserver = new IntersectionObserver( (evento) => {
+    console.log(evento);
+})
 
-// myObserver.observe(threeSectionEl);
+const threeSectionEl = document.querySelectorAll('.hidden');
+threeSectionEl.forEach((element) => {
+    myObserver.observer(element)
+})
+
 
 
 // essa constante pegará todos os elementos que estiverem com a teg data-anime
