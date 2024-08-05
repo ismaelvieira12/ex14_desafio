@@ -117,7 +117,7 @@ body{
     align-items: center;
     min-height: 100vh;
     width: 100vw;
-    background-color: var(--first-contente);
+    background-color: var(--first-contente); 
 }
 .first-container{
     position: relative;
@@ -125,6 +125,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 1050px;
+    height: 400px;
     color: var(--branco);
     background-color: var(--first-contente);
 }
