@@ -96,7 +96,7 @@ body{
 
     &:hover::after{
         background-color: var(--vermelho);
-        width: 100%;
+        width: 90%;
     }
 
     &:active{
@@ -432,19 +432,19 @@ body{
     animation: suave 0.3s linear;
 }
 
-.show{
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-    transition: all 1s;
-    animation: suave 0.3s linear;
-}
 @keyframes suave {
     0%{
-        transform: translate3d(100px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
         filter: blur(10px);
     }
     100%{
         filter: blur(0px);
         transform: translate3d(0px, 0px, 0px);
     }
+}
+.show{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 1s;
+    animation: suave 0.3s linear;
 }
