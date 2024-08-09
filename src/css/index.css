@@ -19,6 +19,9 @@
     --active: #e16969;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     width: 100vw;
@@ -52,11 +55,18 @@ body{
 
 .logo{
     color: var(--branco);
-    font-size: 2rem;
+    font-size: 40px;
     cursor: pointer;
     margin-top: 0.2rem;
     font-weight: lighter;
     text-decoration: none;
+    font-family: "Righteous", sans-serif;
+    font-weight: 100;
+}
+.logo span{
+    color: var(--vermelho);
+    font-weight: bold;
+    font-family: "Righteous", sans-serif;
 }
 
 .container-nav ul{
@@ -86,7 +96,7 @@ body{
 
     &:hover::after{
         background-color: var(--vermelho);
-        width: 100%;
+        width: 90%;
     }
 
     &:active{
@@ -96,29 +106,27 @@ body{
 
 /* Estilizando meu content */
 .container-main{
-    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: var(--preto);
 }
 .first-section{
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--first-contente);
+    width: 100vw;
+    background-color: var(--first-contente); 
 }
 .first-container{
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color: var(--branco);
+    justify-content: space-between;
     width: 1050px;
-    height: 430px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    height: 400px;
+    color: var(--branco);
     background-color: var(--first-contente);
 }
 
@@ -196,7 +204,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
+    border-radius: 10% 30% 10% 30% / 30% 10% 30% 10%;
     right: 50px;
     animation: box-img 2s linear infinite;
     background-color: var(--first-contente);
@@ -204,8 +212,8 @@ body{
     &::before{
         position: absolute;
         content: "";
-        border-radius: 10px;
-        background-image:url("../img/perfil.jpeg");
+        border-radius: 10% 30% 10% 30% / 30% 10% 30% 10%;
+        background-image:url("../img/background.jpeg");
         width: 100%;
         height: 100%;
     }
@@ -295,37 +303,36 @@ body{
       linear-gradient(currentColor 0 0) center/3px 100%;
     background-repeat: no-repeat;
     animation: spin 5s infinite linear;
-  }
+}
   
-  .custom-loader::before,
-  .custom-loader::after {
+.custom-loader::before,
+.custom-loader::after {
     content: "";
     grid-area: 1/1;
     background: repeating-conic-gradient(#0000 0 35deg,currentColor 0 90deg);
     -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
     border-radius: 50%;
-  }
-  .custom-loader::after {
-    margin:20%;
-  }
-  
-  @keyframes spin {
+}
+.custom-loader::after {
+    argin:20%;
+}
+
+@keyframes spin {
     100% {transform: rotate(1turn)}
-  }
+}
 
   /* Estilizando a terceira section onde vai ficar a parte sobre mim e gostos pesoais */
 
 .third-section{
     background-color: var(--first-contente);
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 100%;    
+    margin-bottom: 60px;
 }
 .third-content{
     color: var(--branco);
     height: 490px;
     width: 1050px;
+    margin: auto;
 }
 
 .third-content .sobre{
@@ -352,18 +359,20 @@ body{
 
 .three-section .three-content{
     width: 1050px;
-    margin-bottom: 40px;
+    margin: auto;
 }
 
 .three-content .gosto{
     background-color: var(--active);
+    background-color: var(--vermelho);
     margin: 25px 0;
     padding: 10px 10px;
     border-radius: 4px;
     color: var(--branco);
     &:hover{
         background-color: var(--first-contente);
-        border: 2px solid var(--vermelho);
+        border: 0.5px solid var(--vermelho);
+        box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.436);
         color: var(--branco);
         transition: .2s;
         box-shadow: 2px 2px 25px 5px rgba(255, 0, 0, 0.561);
@@ -371,36 +380,39 @@ body{
 }
 
 .gosto .descrition{
-    
     font-family: "Saira", sans-serif;
     font-size: 20px;
     text-align: justify;
     padding-bottom: 15px;
 }
 
-.spin{
+.fourth-section{
+    background-color: var(--first-contente);
+}
+
+.fourth-content{
     position: relative;
     border: 2px solid var(--vermelho);
     padding: 20px;
     border-radius: 10px;
+    margin: auto;
+    width: 1050px;
+    text-align: justify;
+    margin-top: 60px;
+    margin-bottom: 40px;
 
     &::before{
         position: absolute;
         content: "";
-        border: 2px solid var(--branco);
-        width: 100%;
-        height: 100%;
+        background-color: var(--branco);
+        opacity: 0.1;
+        width: 99%;
+        height: 98%;
+        top: 5px;
+        left: 5px;
+        border-radius: 8px;
     }
 }
-
-.fourth-section{
-    background-color: var(--first-contente);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: var(--branco) ;
-}
-
 .fourth-section .fourth-content{
     width: 1050px;
     text-align: justify;
@@ -409,9 +421,53 @@ body{
 }
 
 .text-motiva{
-    
     font-family: "Saira", sans-serif;
     font-size: 20px;
     text-align: justify;
     padding-bottom: 15px;
+    color: var(--branco);
 }
+
+/* Criando a suavidade do site */
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    animation: suave 0.3s linear;
+}
+
+@keyframes suave {
+    0%{
+        transform: translate3d(0px, 0px, 0px);
+        filter: blur(10px);
+    }
+    100%{
+        filter: blur(0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+.show{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 1s;
+    animation: suave 0.3s linear;
+}
+@keyframes suave {
+    0%{
+        transform: translate3d(0px, 0px, 0px);
+        filter: blur(10px);
+    }
+    100%{
+        filter: blur(0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+
+
+
+/* @media (max-width :1682px){
+    .container-nav ul{
+        display: none;
+    }
+} */
