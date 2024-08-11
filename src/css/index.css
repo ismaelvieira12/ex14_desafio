@@ -466,8 +466,8 @@ body{
 
 
 
-/* @media (max-width :1682px){
+@media (max-width :1682px){
     .container-nav ul{
         display: none;
     }
-} */
+} 
