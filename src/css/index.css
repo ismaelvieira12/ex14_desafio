@@ -248,16 +248,17 @@ body{
 /* Estilizando a segunda section onde ficará as informações pessoais */
 .second-section{
     background-color: var(--preto);
-    height: 600px;
-    margin-bottom: 60px;
-} 
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
 
 .second-container{
     color: var(--branco);
     width: 1050px;
-    height: 100%;
+    height: 430px;
     background-color: var(--preto);
-    margin: auto;
 }
 
 .second-container h2, .title{
@@ -350,8 +351,10 @@ body{
 /* Estilizando a quarta section onde ficará meus gostos pessoais */
 .three-section{
     background-color: var(--preto);
-    color: var(--branco);
-    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--branco) ;
 }
 
 .three-section .three-content{
@@ -462,9 +465,9 @@ body{
 
 
 
-
-@media (max-width :1682px){
+/* 
+@media (max-width :428px){
     .container-nav ul{
         
     }
-}
+} */
