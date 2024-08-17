@@ -554,7 +554,22 @@ footer{
 
     footer{
         background-color: var(--active);
-        height: 300px;
-        width: 100%;
+        & .footer{
+
+            & .text-footer{
+                font-size: 20px;
+            }
+    
+            & .social-midia{
+                gap: 10px;
+
+                & .box{
+                    width: 30px;
+                    height: 30px;
+
+                    & i{}
+                }
+            }
+        }
     }
 }
