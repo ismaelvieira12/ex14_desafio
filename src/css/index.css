@@ -475,11 +475,18 @@ body{
         width: 100%;
     }
     .first-container{
-        flex-direction: column;
-        & .box-img{
-            top: 80%;
-            right: 50%;
-        } 
+        flex-direction: column-reverse;
+        gap: 50px;
+        & .infor-pessoal {
+            height: 50px;
+            /* & h1 {
+                font-size: 20px;
+            } */
+        }
+        & .box-img {
+            top: 0%;
+            right: 100px;
+        }
     }
 
     .second-container {
