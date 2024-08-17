@@ -30,7 +30,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
 }
 /* Estilizando o header e o menu */
 .container-header{
@@ -428,6 +428,23 @@ body{
     color: var(--branco);
 }
 
+
+/* footer */
+footer{
+    & .footer{
+        background-color: var(--vermelho);
+        height: 100px;
+        width: 100%;
+        text-align: center;
+
+        & .text-footer{
+            font-family: "Righteous", sans-serif;
+            font-weight: 100;
+            color: var(--branco);
+        }
+    }
+}
+
 /* Criando a suavidade do site */
 
 .hidden{
@@ -513,5 +530,11 @@ body{
             height: 99%;
             top: 5px;
         }
+    }
+
+    footer{
+        background-color: var(--active);
+        height: 300px;
+        width: 100%;
     }
 }
