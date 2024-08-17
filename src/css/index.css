@@ -257,7 +257,7 @@ body{
 .second-container{
     color: var(--branco);
     width: 1050px;
-    height: 430px;
+    height: 500px;
     background-color: var(--preto);
 }
 
@@ -465,9 +465,32 @@ body{
 
 
 
-/* 
-@media (max-width :428px){
+
+@media (width <= 884px){
     .container-nav ul{
-        
+        display: none;
     }
-} */
+
+    .container-main {
+        width: 100%;
+    }
+
+    .three-section {
+        width: 95%;
+        margin: auto;
+    }
+
+    .third-content {
+        height: 750px;
+        width: 95%;
+    }
+
+    .fourth-section .fourth-content {
+        width: 95%;
+        &::before{
+            width: 97%;
+            height: 99%;
+            top: 5px;
+        }
+    }
+}
