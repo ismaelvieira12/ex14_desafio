@@ -474,6 +474,20 @@ body{
     .container-main {
         width: 100%;
     }
+    .first-container{
+        flex-direction: column;
+        & .box-img{
+            top: 80%;
+            right: 50%;
+        } 
+    }
+
+    .second-container {
+        width: 95%;
+    }
+    .custom-loader{
+        display: none;
+    }
 
     .three-section {
         width: 95%;
