@@ -530,7 +530,7 @@ footer{
         width: 95%;
     }
     .custom-loader{
-        display: none;
+        /*display: none;*/
     }
 
     .three-section {
@@ -567,7 +567,7 @@ footer{
                     width: 30px;
                     height: 30px;
 
-                    & i{}
+                    
                 }
             }
         }
