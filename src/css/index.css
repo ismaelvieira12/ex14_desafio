@@ -30,7 +30,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
 }
 /* Estilizando o header e o menu */
 .container-header{
@@ -257,7 +257,7 @@ body{
 .second-container{
     color: var(--branco);
     width: 1050px;
-    height: 430px;
+    height: 500px;
     background-color: var(--preto);
 }
 
@@ -428,6 +428,43 @@ body{
     color: var(--branco);
 }
 
+
+/* footer */
+footer{
+    & .footer{
+        background-color: var(--vermelho);
+        height: 100px;
+        width: 100%;
+        text-align: center;
+
+        & .text-footer{
+            font-family: "Righteous", sans-serif;
+            font-weight: 100;
+            color: var(--branco);
+        }
+
+        & .social-midia{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            & .box{
+                width: 50px;
+                height: 50px;
+                background-color: var(--branco);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            & .box i{
+                font-size: 30px;
+                color: var(--active);
+            }
+        }
+    }
+}
+
 /* Criando a suavidade do site */
 
 .hidden{
@@ -466,8 +503,73 @@ body{
 
 
 
-@media (max-width :428px){
+@media (width <= 884px){
     .container-nav ul{
         display: none;
+    }
+
+    .container-main {
+        width: 100%;
+    }
+    .first-container{
+        flex-direction: column-reverse;
+        gap: 50px;
+        & .infor-pessoal {
+            height: 50px;
+            /* & h1 {
+                font-size: 20px;
+            } */
+        }
+        & .box-img {
+            top: 0%;
+            right: 100px;
+        }
+    }
+
+    .second-container {
+        width: 95%;
+    }
+    .custom-loader{
+        display: none;
+    }
+
+    .three-section {
+        width: 95%;
+        margin: auto;
+    }
+
+    .third-content {
+        height: 750px;
+        width: 95%;
+    }
+
+    .fourth-section .fourth-content {
+        width: 95%;
+        &::before{
+            width: 97%;
+            height: 99%;
+            top: 5px;
+        }
+    }
+
+    footer{
+        background-color: var(--active);
+        & .footer{
+
+            & .text-footer{
+                font-size: 20px;
+            }
+    
+            & .social-midia{
+                gap: 10px;
+
+                & .box{
+                    width: 30px;
+                    height: 30px;
+
+                    
+                }
+            }
+        }
     }
 }
