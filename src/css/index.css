@@ -554,11 +554,18 @@ footer{
     .third-content {
         height: 750px;
         width: 95%;
+
+        & .sobre p{
+            font-size: 18px;
+        }
     }
     .gosto .descrition{
         font-size: 15px;
     }
 
+    .gosto .descrition{
+        font-size: 15px;
+    }
     .fourth-section .fourth-content {
         width: 95%;
         &::before{
@@ -566,6 +573,10 @@ footer{
             height: 99%;
             top: 5px;
         }
+    }
+
+    .text-motiva{
+        font-size: 15px;
     }
 
     footer{
