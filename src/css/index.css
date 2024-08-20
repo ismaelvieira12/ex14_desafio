@@ -526,6 +526,18 @@ footer{
         }
     }
 
+    .infor-pessoal h1 {
+        font-size: 20px;
+        & p{
+            font-size: 20px;
+        }
+
+        & p strong{
+            font-size: 2opx;
+            padding: 0 10px;
+        } 
+    }
+
     .second-container {
         width: 95%;
     }
