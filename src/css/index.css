@@ -448,9 +448,9 @@ footer{
             justify-content: center;
             gap: 40px;
             & .box{
-                width: 50px;
-                height: 50px;
-                background-color: var(--branco);
+                width: 40px;
+                height: 40px;
+                margin-top: 10px;                background-color: var(--branco);
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
@@ -458,7 +458,7 @@ footer{
             }
 
             & .box i{
-                font-size: 30px;
+                font-size: 20px;
                 color: var(--active);
             }
         }
@@ -589,12 +589,13 @@ footer{
     
             & .social-midia{
                 gap: 10px;
-
                 & .box{
                     width: 30px;
-                    height: 30px;
-
-                    
+                    height: 30px; 
+                    margin: 10px 0;
+                }
+                & .box i {
+                    font-size: 20px;
                 }
             }
         }
