@@ -516,9 +516,7 @@ footer{
         gap: 50px;
         & .infor-pessoal {
             height: 50px;
-            /* & h1 {
-                font-size: 20px;
-            } */
+           
         }
         & .box-img {
             top: 0%;
@@ -538,6 +536,9 @@ footer{
         } 
     }
 
+    .infor-texto-column-one p{
+        font-size: 15px;
+    }
     .second-container {
         width: 95%;
     }
@@ -553,6 +554,9 @@ footer{
     .third-content {
         height: 750px;
         width: 95%;
+    }
+    .gosto .descrition{
+        font-size: 15px;
     }
 
     .fourth-section .fourth-content {
