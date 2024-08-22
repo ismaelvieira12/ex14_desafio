@@ -592,10 +592,10 @@ footer{
                 & .box{
                     width: 30px;
                     height: 30px; 
-                    margin: 10px 0;
+                    margin-top: 10px
                 }
                 & .box i {
-                    font-size: 20px;
+                    font-size: 10px;
                 }
             }
         }
