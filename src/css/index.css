@@ -413,6 +413,7 @@ body{
         border-radius: 8px;
     }
 }
+
 .fourth-section .fourth-content{
     width: 1050px;
     text-align: justify;
@@ -440,6 +441,7 @@ footer{
         & .text-footer{
             font-family: "Righteous", sans-serif;
             font-weight: 100;
+            font-size: 25px;
             color: var(--branco);
         }
 
@@ -448,8 +450,8 @@ footer{
             justify-content: center;
             gap: 40px;
             & .box{
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
                 margin-top: 10px;                background-color: var(--branco);
                 border-radius: 50%;
                 display: flex;
@@ -457,7 +459,7 @@ footer{
                 align-items: center;
             }
 
-            & .box i{
+            & .box i, a{
                 font-size: 20px;
                 color: var(--active);
             }
