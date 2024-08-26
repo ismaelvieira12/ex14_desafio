@@ -302,7 +302,7 @@ body{
       linear-gradient(currentColor 0 0) center/100% 3px,
       linear-gradient(currentColor 0 0) center/3px 100%;
     background-repeat: no-repeat;
-    animation: s8 2s infinite linear;
+    animation: s8 5s infinite linear;
 }
   
 .custom-loader::before,
@@ -600,9 +600,6 @@ footer{
                     width: 30px;
                     height: 30px; 
                     margin-top: 10px
-                }
-                & .box i {
-                    font-size: 10px;
                 }
             }
         }
