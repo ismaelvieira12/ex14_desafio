@@ -437,6 +437,11 @@ footer{
         height: 100px;
         width: 100%;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
 
         & .text-footer{
             font-family: "Righteous", sans-serif;
@@ -448,7 +453,6 @@ footer{
         & .social-midia{
             display: flex;
             justify-content: center;
-            gap: 40px;
             & .box{
                 width: 30px;
                 height: 30px;
@@ -457,6 +461,7 @@ footer{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin: 0 10px;
             }
 
             & .box i, a{
