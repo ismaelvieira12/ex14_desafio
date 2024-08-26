@@ -302,7 +302,7 @@ body{
       linear-gradient(currentColor 0 0) center/100% 3px,
       linear-gradient(currentColor 0 0) center/3px 100%;
     background-repeat: no-repeat;
-    animation: spin 5s infinite linear;
+    animation: s8 2s infinite linear;
 }
   
 .custom-loader::before,
@@ -314,10 +314,10 @@ body{
     border-radius: 50%;
 }
 .custom-loader::after {
-    argin:20%;
+    margin:20%;
 }
-
-@keyframes spin {
+  
+@keyframes s8 {
     100% {transform: rotate(1turn)}
 }
 
