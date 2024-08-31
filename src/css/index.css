@@ -448,25 +448,28 @@ footer{
             font-weight: 100;
             font-size: 25px;
             color: var(--branco);
+            margin-top: 10px;
         }
 
         & .social-midia{
             display: flex;
             justify-content: center;
+            align-items: center;
+
             & .box{
                 width: 30px;
                 height: 30px;
-                margin-top: 10px;                background-color: var(--branco);
+                margin-top: 10px;                
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin: 0 10px;
+                margin: 10px 20px;
             }
 
-            & .box i, a{
+            & .box a{
                 font-size: 20px;
-                color: var(--active);
+                color: var(--branco);
             }
         }
     }
