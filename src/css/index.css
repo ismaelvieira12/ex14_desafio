@@ -550,9 +550,9 @@ footer{
     .first-container{
         flex-direction: column-reverse;
         gap: 50px;
+        align-items: center;
         & .infor-pessoal {
             height: 50px;
-           
         }
         & .box-img {
             top: 0%;
