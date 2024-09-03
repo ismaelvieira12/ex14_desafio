@@ -547,6 +547,7 @@ footer{
             width: 90%;
             height: 100vh;
             background-color:#303030;
+            animation: menu-expadir 0.2s;
 
             & li{
                 margin-top: 40px;
@@ -641,6 +642,25 @@ footer{
                 }
             }
         }
+    }
+}
+
+@keyframes menu-expadir{
+    0%{
+        width: 5%;
+    }
+   
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes menu-contrai {
+    0%{
+        width: 90%;
+    }
+    100%{
+        width: -100%;
     }
 }
 @keyframes x-spin{
