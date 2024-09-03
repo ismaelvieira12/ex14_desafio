@@ -26,7 +26,6 @@ menuMobile.addEventListener('click', () => {
     else{
         hamburger.classList.remove('fa-x');
         hamburger.classList.add('fa-bars');
-        isidBar.style.animation="menu-expadir"; 
         isidBar.style.display='none';
     }
 })
