@@ -524,6 +524,11 @@ footer{
             color: var(--branco);
             font-size: 30px;
 
+           & .fa-x{
+                animation: x-spin 1s;
+           }
+           
+
             & #click{
                 position: absolute;
                 top: 20%;
@@ -624,7 +629,7 @@ footer{
         & .footer{
 
             & .text-footer{
-               /* font-size: 20px;*/
+               font-size: 20px;
             }
     
             & .social-midia{
@@ -636,5 +641,10 @@ footer{
                 }
             }
         }
+    }
+}
+@keyframes x-spin{
+    100% {
+        transform: rotate(180deg);
     }
 }
