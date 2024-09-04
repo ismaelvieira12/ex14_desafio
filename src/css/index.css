@@ -516,7 +516,7 @@ footer{
 
 
 
-@media (width <= 884px){
+@media (width <= 428px){
     .container-nav {
         & .menu-mobile {
             display: block;
@@ -563,11 +563,11 @@ footer{
         height: 100%;
         align-items: center;
         & .infor-pessoal {
-            height: 50px;
+            height: 200px;        
         }
         & .box-img {
-            top: 0%;
-            right: 100px;
+            top: 20%;
+            right: 80px;
         }
     }
 
@@ -586,8 +586,16 @@ footer{
     .infor-texto-column-one p{
         font-size: 15px;
     }
+
+    .second-container h2, .title {
+        font-size: 20px;
+    }
+
     .second-container {
         width: 95%;
+    }
+    .second-container .tag, .tag {
+        font-size: 20px;
     }
     .custom-loader{
         display: none;
@@ -645,6 +653,7 @@ footer{
         }
     }
 }
+
 
 @keyframes menu-expadir{
    0%{
