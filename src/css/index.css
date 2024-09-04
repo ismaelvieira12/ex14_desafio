@@ -646,10 +646,10 @@ footer{
 }
 
 @keyframes menu-expadir{
-    0%{
+/*    ''' 0%{
         width: 5%;
     }
-   
+    */
     100%{
         width: 90%;
     }
