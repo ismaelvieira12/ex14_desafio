@@ -591,6 +591,9 @@ footer{
         font-size: 20px;
     }
 
+    .second-section {
+        width: 102%;
+    }
     .second-container {
         width: 95%;
     }
@@ -601,8 +604,12 @@ footer{
         display: none;
     }
 
+    .third-section{
+        width: 102%;
+    }
+
     .three-section {
-        width: 95%;
+        width: 102%;
         margin: auto;
     }
 
@@ -613,6 +620,10 @@ footer{
         & .sobre p{
             font-size: 18px;
         }
+    }
+
+    .fourth-section {
+        width: 102%;
     }
     .gosto .descrition{
         font-size: 15px;
