@@ -612,7 +612,9 @@ footer{
         width: 102%;
         margin: auto;
     }
-
+    .three-content .gosto{
+        margin: 25px 10px;
+    }
     .third-content {
         height: 750px;
         width: 95%;
