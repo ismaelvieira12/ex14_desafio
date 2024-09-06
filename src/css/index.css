@@ -557,6 +557,9 @@ footer{
     .container-main {
         width: 100%;
     }
+    .first-section {
+        width: 102%;
+    }
     .first-container{
         flex-direction: column-reverse;
         gap: 50px;
