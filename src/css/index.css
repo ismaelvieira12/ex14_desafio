@@ -566,8 +566,9 @@ footer{
             height: 200px;        
         }
         & .box-img {
+            position: relative;
             top: 20%;
-            right: 80px;
+            left: 1%;
         }
     }
 
