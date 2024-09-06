@@ -681,6 +681,16 @@ footer{
         width: 90%;
     }
 }
+
+@keyframes menu-comprimir{
+    0% {
+        width: 90%;
+    }
+
+    100%{
+        width: 0%;
+    }
+}
 @keyframes x-spin{
     100% {
         transform: rotate(180deg);
