@@ -557,6 +557,9 @@ footer{
     .container-main {
         width: 100%;
     }
+    .first-section {
+        width: 102%;
+    }
     .first-container{
         flex-direction: column-reverse;
         gap: 50px;
@@ -592,6 +595,9 @@ footer{
         font-size: 20px;
     }
 
+    .second-section {
+        width: 102%;
+    }
     .second-container {
         width: 95%;
     }
@@ -602,11 +608,17 @@ footer{
         display: none;
     }
 
-    .three-section {
-        width: 95%;
-        margin: auto;
+    .third-section{
+        width: 102%;
     }
 
+    .three-section {
+        width: 102%;
+        margin: auto;
+    }
+    .three-content .gosto{
+        margin: 25px 10px;
+    }
     .third-content {
         height: 750px;
         width: 95%;
@@ -614,6 +626,10 @@ footer{
         & .sobre p{
             font-size: 18px;
         }
+    }
+
+    .fourth-section {
+        width: 102%;
     }
     .gosto .descrition{
         font-size: 15px;
