@@ -558,7 +558,7 @@ footer{
         width: 100%;
     }
     .first-section {
-        width: 102%;
+        width: 105%;
     }
     .first-container{
         flex-direction: column-reverse;
@@ -596,7 +596,7 @@ footer{
     }
 
     .second-section {
-        width: 102%;
+        width: 105%;
     }
     .second-container {
         width: 95%;
@@ -609,7 +609,7 @@ footer{
     }
 
     .third-section{
-        width: 102%;
+        width: 105%;
     }
 
     .three-section {
@@ -618,6 +618,7 @@ footer{
     }
     .three-content .gosto{
         margin: 25px 10px;
+        margin-right: 0px;
     }
     .third-content {
         height: 750px;
@@ -629,7 +630,7 @@ footer{
     }
 
     .fourth-section {
-        width: 102%;
+        width: 105%;
     }
     .gosto .descrition{
         font-size: 15px;
