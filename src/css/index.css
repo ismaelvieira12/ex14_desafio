@@ -517,7 +517,13 @@ footer{
 
 
 @media (width <= 428px){
+    .container-header{
+        width: 100%;
+    }
     .container-nav {
+        & .logo{
+            margin-left: 10px;
+        }
         & .menu-mobile {
             display: block;
             position: relative;
