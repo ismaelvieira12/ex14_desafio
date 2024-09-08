@@ -661,7 +661,7 @@ footer{
     footer{
         background-color: var(--active);
         & .footer{
-
+            width: 105%;
             & .text-footer{
                font-size: 20px;
             }
