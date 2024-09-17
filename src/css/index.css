@@ -676,6 +676,10 @@ footer{
         width: 100%;
         & .first-container {
             width: 860px;
+
+            & .box-img{
+                right: -50px;
+            }
         }
     }
 
