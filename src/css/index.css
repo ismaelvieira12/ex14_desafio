@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
@@ -516,13 +517,7 @@ footer{
 
 
 @media (width <= 428px){
-    .container-header{
-        width: 100%;
-    }
     .container-nav {
-        & .logo{
-            margin-left: 10px;
-        }
         & .menu-mobile {
             display: block;
             position: relative;
@@ -563,7 +558,7 @@ footer{
         width: 100%;
     }
     .first-section {
-        width: 100%;
+        width: 102%;
     }
     .first-container{
         flex-direction: column-reverse;
@@ -601,7 +596,7 @@ footer{
     }
 
     .second-section {
-        width: 100%;
+        width: 102%;
     }
     .second-container {
         width: 95%;
@@ -614,11 +609,11 @@ footer{
     }
 
     .third-section{
-        width: 100%;
+        width: 102%;
     }
 
     .three-section {
-        width: 100%;
+        width: 102%;
         margin: auto;
     }
     .three-content .gosto{
@@ -634,7 +629,7 @@ footer{
     }
 
     .fourth-section {
-        width: 100%;
+        width: 102%;
     }
     .gosto .descrition{
         font-size: 15px;
@@ -659,7 +654,7 @@ footer{
     footer{
         background-color: var(--active);
         & .footer{
-            width: 100%;
+
             & .text-footer{
                font-size: 20px;
             }
@@ -675,7 +670,11 @@ footer{
         }
     }
 }
-
+@media(max-width: 884px){
+    .first-section {
+        margin: 0;
+    }
+}
 
 @keyframes menu-expadir{
    0%{
