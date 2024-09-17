@@ -672,7 +672,7 @@ footer{
 }
 @media(max-width: 884px){
     .first-section {
-        margin: 0;
+        margin: 50px;
         width: 100%;
         & .first-container {
             width: 860px;
