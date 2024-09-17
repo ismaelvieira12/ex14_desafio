@@ -673,7 +673,12 @@ footer{
 @media(max-width: 884px){
     .first-section {
         margin: 0;
+        width: 100%;
+        & .first-container {
+            width: 860px;
+        }
     }
+
 }
 
 @keyframes menu-expadir{
