@@ -1,23 +1,43 @@
 body{
     display: flex;
     flex-direction: column;
-    margin: 3px;
     background-color: bisque;
 
     & .container-header{
         display: flex;
-        margin: 3px;
-        flex: 0 1 200px;
-        background-color: bisque;
-
+        background-color: #000;
         & .container-nav{
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            color: #fff;
+
+            & a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 40px;
+                font-family: "Righteous", sans-serif;
+                & span{
+                    color: red;
+                    font-family: "Righteous", sans-serif;
+                }
+            }
 
             & #isida-bar{
+                list-style: none;
                 display: flex;
                 justify-content: center;
-                
+                align-items: center;
+                /* gap: 40px; */
+                height: 40px;
+
+                & a{
+                    color: #fff;
+                    text-decoration: none;
+                    margin: 0 20px;
+                    font-size: 20px;
+                }
             }
         }
     }
