@@ -677,6 +677,7 @@ footer{
     .first-section {
         margin: 50px;
         width: 100%;
+        flex-diretion:column;
         & .first-container {
             width: 860px;
 
