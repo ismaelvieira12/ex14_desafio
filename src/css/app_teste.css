@@ -1,0 +1,9 @@
+body{
+    display: flex;
+
+    & .container-main{
+        display: flex;
+    }
+}
+
+
