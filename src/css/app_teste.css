@@ -7,6 +7,7 @@
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: bisque;   
     flex: 1 1 100vw;   
     flex-wrap: wrap;
