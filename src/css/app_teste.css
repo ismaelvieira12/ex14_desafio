@@ -11,12 +11,14 @@ body{
     background-color: bisque;   
     flex: 1 1 100vw;   
     flex-wrap: wrap;
+
+
     & .container-header{
         background-color: #000;
         display: flex;
         justify-content: space-around;
-        align-items: center;
         height: 70px;
+
         & .container-nav{
             display: flex;
             justify-content: space-around;
@@ -24,11 +26,12 @@ body{
             width: 1050px;
             color: #fff;
             flex: 1 1 100vw;
-            & a{
-                color: #fff;
+
+            & .logo{
                 text-decoration: none;
                 font-size: 40px;
                 font-family: "Righteous", sans-serif;
+                color: #fff;
                 & span{
                     color: red;
                     font-family: "Righteous", sans-serif;
@@ -40,8 +43,8 @@ body{
                 display: flex;
                 justify-content: end;
                 align-items: center;
-                gap: 40px;
-                height: 40px;
+                
+                
 
                 & a{
                     color: #fff;
