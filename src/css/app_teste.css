@@ -24,19 +24,22 @@ body{
     background-color: bisque;   
     flex: 1 1 100vw;   
     flex-wrap: wrap;
-
+    position: relative;
+    top: 100px;
 
     & .container-header{
+        position: fixed;
         background-color: var(--preto);
         display: flex;
-        position: fixed;
         justify-content: space-around;
+        align-items: center;
+        top: 0;
         height: 70px;
+        width: 100%;
 
         & .container-nav{
             display: flex;
             justify-content: space-around;
-            align-items: center;
             width: 1050px;
             color: var(--branco);
             flex: 1 1 100vw;
@@ -56,9 +59,9 @@ body{
                 list-style: none;
                 display: flex;
                 justify-content: end;
-                align-items: center;
-
-
+                align-items: center;   
+                
+                
                 & a{
                     position: relative;
                     color: #fff;
@@ -66,14 +69,22 @@ body{
                     margin: 0 20px;
                     font-size: 20px;
                     padding: 20px 0;
-
+                    
                     &::before{
                         content: "";
                         position: absolute;
-                        background-color: var(--vermelho);
                         width: 100%;
                         height: 2px;
                         bottom: 10px;
+                    }
+                    
+                    &:hover::before{
+                        animation: asideBar 60ms linear;
+                        background-color: var(--vermelho);
+                    }
+               
+                    &:active{
+                        color: var(--vermelho);
                     }
                 }
             }
@@ -94,6 +105,20 @@ body{
         margin: 3px;
         background-color: bisque;
         flex: 1 1 100vw;
+    }
+
+    & .menu-mobile{
+        display: none;
+    }
+}
+
+@keyframes asideBar {
+    0%{
+        width: 5%;
+    }
+
+    100%{
+        width: 100%;
     }
 }
 
