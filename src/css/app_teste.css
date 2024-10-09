@@ -21,11 +21,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: bisque;   
+    background-color: var(--preto);   
     flex: 1 1 100vw;   
     flex-wrap: wrap;
     position: relative;
-    top: 100px;
+    top: 70px;
 
     & .container-header{
         position: fixed;
@@ -43,6 +43,7 @@ body{
             width: 1050px;
             color: var(--branco);
             flex: 1 1 100vw;
+            box-shadow: 2px 2px 40px 1px rgba(81, 81, 81, 0.45);
 
             & .logo{
                 text-decoration: none;
@@ -92,12 +93,13 @@ body{
     }
 
     & .container-main{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 3px;
-        background-color: bisque;
-        flex: 1 1 100vw;
+        background-color: var(--preto);
+        color: var(--branco);
+        width: 1050px;
+        margin: auto;
+        & .teste-main{
+            margin: auto;
+        }
     }
 
     & .footer{
