@@ -210,12 +210,6 @@ body{
                     color: var(--branco);
                 }
 
-                & .tag, .tag{
-                    color: var(--vermelho);
-                    font-size: 30px;
-                    padding: 20px;
-                }
-
                 & .infor-texto{
                     display: flex;
                     flex-direction: row-reverse;
@@ -262,6 +256,43 @@ body{
                 }
             }
         }
+
+        & .three-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--preto);
+            width: 100%;
+            height: 100vh;
+            & .title{
+                margin-top: 50px;
+            }
+            & .three-content{
+                & .gosto{
+                    background-color: var(--vermelho);
+                    margin: 25px 0;
+                    padding: 10px 10px;
+                    border-radius: 4px;
+                    color: var(--branco)0;
+                    text-align: justify;
+                    height: 100px;
+
+                    & h3{
+                        font-weight: 100;
+                        font-family: "Righteous", sans-serif;
+                        margin: 10px 0;
+                    }
+
+                    &:hover{
+                        background-color: var(--first-contente);
+                        border: 2px solid var(--vermelho);
+                        transition: all 0.2s;
+                    }
+                }
+            }
+          
+        }
     }
 
     /* Estilizando a terceira section onde vai ficar a parte sobre mim e gostos pesoais */
@@ -296,6 +327,7 @@ body{
     }
 
 
+
     & .footer{
         display: flex;
         margin: 3px;
@@ -306,6 +338,11 @@ body{
     & .menu-mobile{
         display: none;
     }
+}
+.tag{
+    color: var(--vermelho);
+    font-size: 30px;
+    padding: 20px;
 }
 .title{
     margin-top: 10px;
