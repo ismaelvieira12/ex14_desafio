@@ -32,6 +32,7 @@ body{
         top: 0;
         height: 70px;
         width: 100%;
+        z-index: 100;
 
         & .container-nav{
             display: flex;
@@ -97,6 +98,7 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             background-color: var(--first-contente);
             width: 100%;
             height: 100vh;
@@ -105,13 +107,11 @@ body{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                
-
-
+                width: 1240px;
                 & .infor-pessoal{
                     font-size: 1.4rem;
                     font-family: "Righteous", sans-serif;
-    
+                    text-align: justify;
                     &  h1 {
                         font-family: "Righteous", sans-serif;
                         font-weight: 100;
@@ -123,34 +123,62 @@ body{
 
                         & strong{
                             color: var(--vermelho);
+                            font-weight: 100;
+                        }
+                    }
+                    & span{
+                        position: relative;
+                        font-family: "Righteous", sans-serif;
+                        font-weight: 100;
+                        /* Adicionando a frase antes do apan */
+                        &::before{
+                            content: " ";
+                            color: var(--vermelho);
+                            animation: frase 20s infinite;  
+                        }
+                    
+                        /* Adicionando o cursor depois do span */
+                        &::after{
+                            content: " ";
+                            position: absolute;
+                            height: 100%;
+                            border-left: 2px solid var(--vermelho);
+                            right: -10px;
+                            width: calc(100% + 13px);
+                            background-color: var(--first-contente);
+                            animation: cursor .8s infinite, revelarFrase 20s steps(15) infinite;
                         }
                     }
                 }
-            }
 
-            & span{
-                position: relative;
-                font-family: "Righteous", sans-serif;
-                font-weight: 100;
-                /* Adicionando a frase antes do apan */
-                &::before{
-                    content: " ";
-                    color: var(--vermelho);
-                    animation: frase 20s infinite;  
-                }
-            
-                /* Adicionando o cursor depois do span */
-                &::after{
-                    content: " ";
-                    position: absolute;
-                    height: 100%;
-                    border-left: 2px solid var(--vermelho);
-                    right: -20px;
-                    width: calc(100% + 13px);
+                /* Estilizandoa a div que dará destaque a imagem */
+                & .box-img{
+                    /* position: absolute; */
+                    border: 2px solid var(--vermelho);
+                    box-shadow: 2px 2px 50px rgba(252, 60, 60, 0.607);
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10% 30% 10% 30% / 30% 10% 30% 10%;
+                    right: 50px;
+                    animation: box-img 2s linear infinite;
                     background-color: var(--first-contente);
-                    animation: cursor .8s infinite, revelarFrase 20s steps(15) infinite;
+                
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        border-radius: 10% 30% 10% 30% / 30% 10% 30% 10%;
+                        height: 100%;
+                    }
                 }
-            
+
+                & img{
+                    width: 200px;
+                    border-radius: 50%;
+                    animation: img 2s linear infinite;
+                }
             }
         }
     }
@@ -187,6 +215,26 @@ body{
     5%, 20%, 40%, 45%, 60%, 65%, 80%, 85%{
         width: calc(100% + 13px);
     } 
+}
+
+/* Rotação da div destáque */
+@keyframes box-img {
+    0%{
+        transform: rotate(-135deg);
+    }
+    100%{
+        transform: rotate(135deg);
+    }
+}
+/* Centralizando a imagem */
+@keyframes img {
+    0%{
+        transform: rotate(135deg);
+    }
+
+    100%{
+        transform: rotate(-135deg);
+    }
 }
 
 @keyframes asideBar {
