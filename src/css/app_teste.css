@@ -350,13 +350,14 @@ body{
                 margin-top: 40px;
                 position: relative;
                 background-color: #3d3d3d65;
+                border-radius: 5px;
                 &::before{
                     position: absolute;
                     content: "";
                     width: 100%;
                     height: 99%;
                     border-radius: 5px;
-                    top: 5px;
+                    top: 0;
                     left: 0;
                     border: 2px solid var(--branco);
                 }
@@ -370,11 +371,43 @@ body{
     }
 
 
-    & .footer{
-        display: flex;
-        margin: 3px;
-        background-color: bisque;
-        flex: 1 1 100vw;
+    & footer{
+        background-color: var(--vermelho);
+        height: 100px;
+        & .footer{
+            & .text-footer{
+                font-family: "Saira", sans-serif;
+                font-size: 20px;
+               text-align: center;
+            }
+    
+            & .social-midia{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                & .box{
+                    & a{
+                        background-color: var(--branco);
+                        width: 50px;
+                        height: 50px; 
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        font-size: 25px;
+                        color: var(--first-contente);
+                        text-decoration: none;
+
+                        &:hover{
+                            color: var(--vermelho);
+                            scale: 1.2;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     & .menu-mobile{
