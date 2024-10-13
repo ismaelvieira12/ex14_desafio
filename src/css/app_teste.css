@@ -184,6 +184,7 @@ body{
             }
         }
 
+        /* Estilizando a segunda section onde ficará as informações pessoais */
         & .second-section{
             display: flex;
             flex-direction: column;
@@ -192,6 +193,74 @@ body{
             background-color: var(--preto);
             width: 100%;
             height: 100vh;
+
+            & .second-container{
+                color: var(--branco);
+                width: 1240px;
+                height: 500px;
+                background-color: var(--preto);
+
+                &  h2, .title{
+                    text-align: center;
+                    margin: 55px 0 60px 0;
+                    font-family: "Saira", sans-serif;
+                    font-optical-sizing: auto;
+                    font-style: normal;
+                    font-variation-settings:"wdth" 100;
+                    color: var(--branco);
+                }
+
+                & .tag, .tag{
+                    color: var(--vermelho);
+                    font-size: 30px;
+                    padding: 20px;
+                }
+
+                & .infor-texto{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    & .infor-texto-column-one{
+                        width: 400px;
+
+                        &  p{
+                            font-family: "Saira", sans-serif;
+                            font-size: 20px;
+                            text-align: justify;
+                        }
+                    }
+
+                    & /* Estilizando o spin da segunda section */
+                    .custom-loader {
+                        width: 200px;
+                        height: 200px;
+                        display: grid;
+                        color: var(--vermelho);
+                        background: 
+                          linear-gradient(currentColor 0 0) center/100% 3px,
+                          linear-gradient(currentColor 0 0) center/3px 100%;
+                        background-repeat: no-repeat;
+                        animation: s8 5s infinite linear;
+
+                        
+                        &::before,
+                        &::after {
+                            content: "";
+                            grid-area: 1/1;
+                            background: repeating-conic-gradient(#0000 0 35deg,currentColor 0 90deg);
+                            -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+                            border-radius: 50%;
+                        }
+
+                        &::after {
+                            margin:20%;
+                        }
+
+                    }
+                }
+            }
         }
     }
 
@@ -259,4 +328,8 @@ body{
     }
 }
 
+/* Rotação do elemento da sedunda section */
+@keyframes s8 {
+    100% {transform: rotate(1turn)}
+}
 
