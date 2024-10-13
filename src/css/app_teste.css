@@ -264,6 +264,38 @@ body{
         }
     }
 
+    /* Estilizando a terceira section onde vai ficar a parte sobre mim e gostos pesoais */
+    & .third-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--first-contente);
+        width: 100%;
+        height: 500px;
+
+        & .third-content{
+            color: var(--branco);
+            height: 490px;
+            width: 1240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            & .sobre{
+                border: 1px solid var(--vermelho);
+                border-radius: 5px;
+                
+                & p{
+                    font-family: "Saira", sans-serif;
+                    font-size: 20px;
+                    text-align: justify;
+                    padding: 20px 10px;
+                    color: var(--branco);
+                }
+            }
+        }
+    }
+
+
     & .footer{
         display: flex;
         margin: 3px;
@@ -275,7 +307,13 @@ body{
         display: none;
     }
 }
-
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: "Righteous", sans-serif;
+}
 @keyframes frase{
     0%, 100%{
         content: "Ismael Nascimento Vieira"
