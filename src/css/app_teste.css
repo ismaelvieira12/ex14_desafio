@@ -485,6 +485,18 @@ body{
     100% {transform: rotate(1turn)}
 }
 
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    animation: suave 0.3s linear;
+}
+
+.show{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 1s;
+    animation: suave 0.3s linear;
+}
 /* Começando a parte de lyout*/
  
 
