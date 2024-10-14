@@ -499,4 +499,21 @@ body{
 }
 /* Começando a parte de lyout*/
  
+@media(max-width: 884px){
+    .container-header{
+        width: 114%;
+    }
+    .first-section {
+        margin: 50px;
+        width: 100%;
+        
+        & .first-container {
+            width: 860px;
 
+            & .box-img{
+                right: -50px;
+            }
+        }
+    }
+
+} 
