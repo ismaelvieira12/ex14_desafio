@@ -497,10 +497,12 @@ body{
     transition: all 1s;
     animation: suave 0.3s linear;
 }
+
+
 /* Começando a parte de lyout*/
-@media(max-width: 360px){
-    #isaid-bar{
-        display: none;
+@media(max-width:428px){
+    & #isida-bar {
+        display: none !important;
     }
 }
 
