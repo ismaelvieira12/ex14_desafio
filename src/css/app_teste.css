@@ -499,7 +499,9 @@ body{
 }
 /* Começando a parte de lyout*/
 @media(max-width: 360px){
-    #isaid
+    #isaid-bar{
+        display: none;
+    }
 }
 
 
