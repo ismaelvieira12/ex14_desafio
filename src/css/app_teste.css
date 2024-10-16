@@ -501,8 +501,14 @@ body{
 
 /* Começando a parte de lyout*/
 @media(max-width:428px){
-    & #isida-bar {
-        display: none !important;
+    & .container-nav{
+        
+        & #isida-bar {
+            display: none !important;
+        }
+    }
+    & .container-main{
+        display: none;
     }
 }
 
