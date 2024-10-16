@@ -503,7 +503,9 @@ body{
     /* & .container-header{
     } */
     & .container-nav{
-        justify-content: space-between;
+        justify-content: space-between !important; 
+        align-items: center;
+        margin: 0 10px;
         & .logo{
         
         }
