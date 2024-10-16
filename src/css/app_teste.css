@@ -42,7 +42,6 @@ body{
             display: flex;
             justify-content: space-around;
             color: var(--branco);
-            flex: 1 1 100vw;
 
             & .logo{
                 text-decoration: none;
@@ -501,10 +500,19 @@ body{
 
 /* Começando a parte de lyout*/
 @media(max-width:428px){
+    /* & .container-header{
+    } */
     & .container-nav{
+        justify-content: space-between;
+        & .logo{
         
+        }
         & #isida-bar {
             display: none !important;
+        }
+
+        & .menu-mobile{
+            display: block !important;
         }
     }
     & .container-main{
