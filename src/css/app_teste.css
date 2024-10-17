@@ -554,12 +554,18 @@ body{
         & .custom-loader{
             display: none !important;
         }
+        & .second-container {
+            width: 100% !important;
+        }
+
+        & .third-section{
+            height: 660px;
+            & .third-content{
+                width:100vw !important;
+            }
+        }
     }
 
-    & .second-container {
-        width: 100% !important;
-    }
-    
     @keyframes x-spin{
         100% {
             transform: rotate(180deg);
