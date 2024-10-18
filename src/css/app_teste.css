@@ -93,7 +93,7 @@ body{
     & .container-main{
         background-color: var(--preto);
         color: var(--branco);
-        width: 100%;
+        width: 100vw;
         text-align: center;
         & .first-section{
             display: flex;
@@ -547,10 +547,25 @@ body{
     }
     & .container-main{
         & .first-section {
+            margin: 0;
             width: 90% !important;
+
             & .first-container{
+                height: 90% !important;
                 width: 90% !important;
                 flex-direction: column-reverse !important;
+                justify-content: space-around !important;
+
+                & .infor-pessoal{
+                    font-size: -0.6rem !important;
+                    & h1{
+                        font-size: 20px !important;
+                    }
+
+                    & p{
+                        font-size: 15px !important;
+                    }
+                }
             }
         }
 
