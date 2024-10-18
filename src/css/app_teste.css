@@ -568,9 +568,19 @@ body{
             }
         }
 
-        & .three-content {
-            width: 90% !important;
-            height: 50px !important;
+        & .three-section{
+            height: 1100px !important;
+            justify-content: flex-start !important;
+            & .title {
+                margin-top: 30px !important;
+            }
+            & .three-content {
+                width: 90% !important;
+
+                & .gosto{
+                    height: 164px !important;
+                }                    
+            }
         }
     }
 
