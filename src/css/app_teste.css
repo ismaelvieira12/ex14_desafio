@@ -582,6 +582,16 @@ body{
                 }                    
             }
         }
+
+        & .fourth-section {
+            height: 600px !important;
+            & .fourth-content {
+                width: 90% !important;
+                & .text-motiva {
+                    height: 490px !important;
+                }
+            }
+        }
     }
 
     @keyframes x-spin{
