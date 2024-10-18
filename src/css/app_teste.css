@@ -546,20 +546,28 @@ body{
         }
     }
     & .container-main{
-        & .first-container{
-            width: 100%;
-            flex-direction: column-reverse !important;
+        & .first-section {
+            width: 90% !important;
+            & .first-container{
+                width: 90% !important;
+                flex-direction: column-reverse !important;
+            }
         }
 
         & .custom-loader{
             display: none !important;
         }
         & .second-container {
-            width: 99% !important;
+            width: 90% !important;
+            
+            & .title{
+                font-weight: 100 !important;
+                font-family: "Righteous", sans-serif !important;
+            }
         }
 
         & .third-section{
-            height: 700px;
+            height: 700px !important;
             & .title{
                 margin-top: 30px !important;
             }
