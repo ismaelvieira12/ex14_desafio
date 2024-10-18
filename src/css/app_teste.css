@@ -555,11 +555,11 @@ body{
             display: none !important;
         }
         & .second-container {
-            width: 100% !important;
+            width: 99% !important;
         }
 
         & .third-section{
-            height: 600px;
+            height: 700px;
             & .title{
                 margin-top: 30px !important;
             }
@@ -569,7 +569,7 @@ body{
         }
 
         & .three-section{
-            height: 1100px !important;
+            height: 1130px !important;
             justify-content: flex-start !important;
             & .title {
                 margin-top: 30px !important;
@@ -578,17 +578,17 @@ body{
                 width: 90% !important;
 
                 & .gosto{
-                    height: 164px !important;
+                    height: 180px !important;
                 }                    
             }
         }
 
         & .fourth-section {
-            height: 600px !important;
+            height: 760px !important;
             & .fourth-content {
                 width: 90% !important;
                 & .text-motiva {
-                    height: 490px !important;
+                    height: 630px !important;
                 }
             }
         }
