@@ -516,7 +516,7 @@ body{
             font-size: 30px;
 
            & .fa-x{
-                animation: x-spin 1s;
+                animation: x-spin 1s infinite linear;
            }
            
 
@@ -545,8 +545,11 @@ body{
             }
         }
     }
-    & .container-main{
 
+    & .container-main{
+        .title{
+            font-size: 20px !important;
+        }
         & .first-section {
             margin: 0;
             width: 100% !important;
@@ -620,7 +623,7 @@ body{
 
     @keyframes x-spin{
         100% {
-            transform: rotate(180deg);
+            transform: rotate(360deg);
         }
     }
 }
