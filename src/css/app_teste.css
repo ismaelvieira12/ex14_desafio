@@ -93,7 +93,7 @@ body{
     & .container-main{
         background-color: var(--preto);
         color: var(--branco);
-        width: 100vw;
+        width: 100%;
         text-align: center;
         & .first-section{
             display: flex;
@@ -515,7 +515,7 @@ body{
             font-size: 30px;
 
            & .fa-x{
-                animation: x-spin 1s;
+                animation: x-spin 1s infinite linear;
            }
            
 
@@ -544,10 +544,14 @@ body{
             }
         }
     }
+
     & .container-main{
+        .title{
+            font-size: 20px !important;
+        }
         & .first-section {
             margin: 0;
-            width: 90% !important;
+            width: 100% !important;
 
             & .first-container{
                 height: 90% !important;
@@ -618,7 +622,7 @@ body{
 
     @keyframes x-spin{
         100% {
-            transform: rotate(180deg);
+            transform: rotate(360deg);
         }
     }
 }
