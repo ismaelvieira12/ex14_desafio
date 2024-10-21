@@ -59,7 +59,7 @@ body{
                 display: flex;
                 justify-content: end;
                 align-items: center;   
-                
+                z-index: 100;
                 
                 & a{
                     position: relative;
@@ -498,7 +498,7 @@ body{
 
 
 /* Começando a parte de lyout*/
-@media(max-width:428px){
+@media(max-width: 428px){
     & .container-nav{
         justify-content: space-between !important; 
         align-items: center;
@@ -515,9 +515,8 @@ body{
             font-size: 30px;
 
            & .fa-x{
-                animation: x-spin 1s infinite linear;
+                animation: x-spin 0.3s linear;
            }
-           
 
             & #click{
                 position: absolute;
@@ -538,6 +537,7 @@ body{
             height: 100vh;
             background-color:#303030;
             animation: menu-expadir 0.5s;
+            z-index: 100 !important;
 
             & li{
                 margin-top: 40px;
@@ -615,6 +615,7 @@ body{
                 width: 90% !important;
                 & .text-motiva {
                     height: 630px !important;
+                    font-size: 18px !important;
                 }
             }
         }
@@ -622,11 +623,30 @@ body{
 
     @keyframes x-spin{
         100% {
-            transform: rotate(360deg);
+            transform: rotate(180deg);
         }
     }
 }
 
+@keyframes menu-expadir{
+    0%{
+         width: 5%;
+     }
+    
+     100%{
+         width: 90%;
+     }
+ }
+ 
+ @keyframes menu-comprimir{
+     0% {
+         width: 90%;
+     }
+ 
+     100%{
+         width: 0%;
+     }
+ }
 
 @media(max-width: 884px){
     .container-header{
