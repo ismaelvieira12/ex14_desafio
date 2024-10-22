@@ -1,6 +1,6 @@
 
 const myObserver = new IntersectionObserver( (evento) => {
-    console.log(evento)
+    // console.log(evento)
     evento.forEach((entry) =>{
         if(entry.isIntersecting){
             entry.target.classList.add('show');
