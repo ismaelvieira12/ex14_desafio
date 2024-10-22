@@ -25,6 +25,7 @@ menuMobile.addEventListener('click', () => {
     }
     else{
         hamburger.classList.remove('fa-x');
+        // isidBar.classList.add('comprimir');
         hamburger.classList.add('fa-bars');
         isidBar.style.display='none';
     }
