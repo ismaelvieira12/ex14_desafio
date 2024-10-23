@@ -657,7 +657,7 @@ body{
     & .first-section {
         margin: 0;
         width: 100% !important;
-        height: 120vh !important;
+        height: 100vh !important;
 
         & .first-container{
             height: 90% !important;
@@ -702,7 +702,9 @@ body{
 
     & .third-section {
         & .third-content {
-           width: 88% !important;
+            margin-top: 50px !important;
+            margin-bottom: 50px !important;
+            width: 88% !important;
         }
 
     }
@@ -723,6 +725,10 @@ body{
                 height: 355px !important;
             }
         }
+    }
+
+    & footer {
+        height: 130px !important;
     }
 
 } 
