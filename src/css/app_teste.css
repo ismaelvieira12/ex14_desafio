@@ -614,11 +614,16 @@ body{
             & .fourth-content {
                 width: 90% !important;
                 & .text-motiva {
-                    height: 630px !important;
+                    height: 590px !important;
                     font-size: 18px !important;
                 }
             }
         }
+
+        & footer {
+            height: 100px !important;
+        }
+    
     }
 
     @keyframes x-spin{
@@ -692,7 +697,7 @@ body{
             color: var(--branco);
             height: 500px !important;
             background-color: var(--preto);
-            width: 50% !important;
+            /* width: 50% !important; */
 
             & .custom-loader {
                 display: none !important;
