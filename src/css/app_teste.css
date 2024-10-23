@@ -657,8 +657,6 @@ body{
 }
 
 @media(max-width: 884px){
-    .container-header{
-    }
     & .first-section {
         margin: 0;
         width: 100% !important;
